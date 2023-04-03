@@ -1,0 +1,31 @@
+.btn {
+  &__yellow {
+    border: 2px solid #ffcb00;
+    padding: 0.8rem 1.8rem;
+    display: inline-block;
+    border-radius: 33px;
+    color: #ffcb00;
+    font-weight: 600;
+    -webkit-transition: 0.1s linear;
+    -moz-transition: 0.1s linear;
+    -ms-transition: 0.1s linear;
+    -o-transition: 0.1s linear;
+    transition: 0.1s linear;
+    &:hover {
+      color: white;
+      background-color: #ffcb00;
+    }
+  }
+
+  &--yellow {
+    cursor: pointer;
+    -webkit-transition: 0.1s linear;
+    -moz-transition: 0.1s linear;
+    -ms-transition: 0.1s linear;
+    -o-transition: 0.1s linear;
+    transition: 0.1s linear;
+    &:hover {
+      color: #ffcb00;
+    }
+  }
+}
