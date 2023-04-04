@@ -38,9 +38,9 @@ my-app/
 ├── src/
 │   └── components
 │   └── slider.js
-├──assets
-│   └── images
-│   └── styles
+│   └── assets
+│       └── images
+│       └── styles
 └───public
     └── index.html
 
