@@ -127,3 +127,25 @@ body {
   font-size: 16px;
 }
 
+:root {
+  --base-font-family: "Plain-Light", sans-serif;
+  --title-font-family: "Plain-Regular", sans-serif;
+  --menu-font-size: 14px;
+  --primary-color: #057a8d;
+  --white-color: #ffffff;
+  --btn-general-font-size: 16px;
+  --p-font-size: 18px;
+}
+
+body {
+  background: var(--white-color);
+  font-family: var(--base-font-family);
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  @media screen and (min-width: 1200px) {
+    width: 1140px;
+  }
+}

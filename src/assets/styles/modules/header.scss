@@ -5,13 +5,13 @@ $class-name: ".header";
   flex-direction: row;
   background: #0c8195;
   color: white;
-  padding: 2rem 12rem;
+  padding: 1.5rem 13rem;
 
   div {
     //  flex-basis: 50%;
   }
   &__logo {
-    font-size: 2.5em;
+    font-size: 2em;
     margin-right: 1.5rem;
     display: flex;
     align-items: center;
@@ -25,8 +25,9 @@ $class-name: ".header";
       justify-content: space-around;
       height: 100%;
       align-items: center;
+      font-size: var(--menu-font-size);
       li {
-        padding: 0.2rem 2rem;
+        padding: 0.2rem 1.5rem;
         cursor: pointer;
       }
     }

@@ -1,4 +1,6 @@
 .btn {
+  cursor: pointer;
+
   &__yellow {
     border: 2px solid #ffcb00;
     padding: 0.8rem 1.8rem;
@@ -17,8 +19,27 @@
     }
   }
 
+  &__white {
+    padding: 1.3rem 1.8rem;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    display: inline-block;
+    border-radius: 33px;
+    color: var(--primary-color);
+    background-color: var(--white-color);
+    font-size: var(--p-font-size);
+    -webkit-transition: 0.7s ease;
+    -moz-transition: 0.7s ease;
+    -ms-transition: 0.7s ease;
+    -o-transition: 0.7s ease;
+    transition: 0.7s ease;
+    &:hover {
+      color: white;
+      background-color: #000000;
+    }
+  }
+
   &--yellow {
-    cursor: pointer;
     -webkit-transition: 0.1s linear;
     -moz-transition: 0.1s linear;
     -ms-transition: 0.1s linear;
