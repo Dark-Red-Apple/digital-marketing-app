@@ -5,7 +5,7 @@ export default function Header() {
     <header className="header">
       <div className="header__logo btn btn--yellow">
         <i></i>
-        Digital Trend
+        <a href="./">Digital Trend</a>
       </div>
       <div className="header__menu">
         <nav className="nav-links">
