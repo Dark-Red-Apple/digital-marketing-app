@@ -4,6 +4,7 @@ import "../assets/styles/index.scss"
 import Header from "./Header.js"
 import HomeSlider from "./HomeSlider"
 import HomeAboutUs from "./HomeAboutUs"
+import HomeServices from "./HomeServices"
 
 // import Page from "./Page"
 
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <HomeSlider />
       <HomeAboutUs />
+      <HomeServices />
     </div>
   )
 }
