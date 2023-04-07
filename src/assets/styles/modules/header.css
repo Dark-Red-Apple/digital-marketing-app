@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  background: var(--primary-color);
+  color: white;
+  padding: 1.5rem 13rem;
+}
+.header__logo {
+  font-size: 2em;
+  margin-right: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.header__menu {
+  margin-left: auto;
+}
+.header__menu nav {
+  color: white;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+  font-size: var(--menu-font-size);
+}
+.header__menu nav li {
+  padding: 0.2rem 1.5rem;
+  cursor: pointer;
+}/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,101 @@
+@charset "UTF-8";
+.home__about-us__container {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 1200px) {
+  .home__about-us__container {
+    max-width: 65%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .home__about-us__container h2 {
+    max-width: 65%;
+  }
+}
+.home__about-us__container__about__image {
+  line-height: 0;
+}
+.home__about-us__container__about__image img {
+  width: 100%;
+}
+
+.testimonials-section {
+  background-color: #ffffff;
+}
+.testimonials-section__testimonials-container {
+  align-items: center;
+  padding: 150px 0;
+  display: flex;
+  flex-direction: row;
+}
+.testimonials-section__testimonials-container > div:first-child {
+  flex-basis: 50%;
+}
+.testimonials-section__testimonials-container > div:first-child img {
+  width: 100%;
+}
+.testimonials-section__testimonials-container > div:nth-child(2) {
+  flex-basis: 50%;
+  padding: 0 30px;
+  position: relative;
+}
+.testimonials-section__testimonials-container > div:nth-child(2) .quote::after {
+  content: "“";
+  position: absolute;
+  top: 200px;
+  left: 20px;
+  font-family: times;
+  color: var(--gray-color);
+  font-weight: var(--font-weight-bold);
+  font-size: 20em;
+  line-height: 0;
+  opacity: 0.1;
+}
+.testimonials-section__testimonials-container > div:nth-child(2) h4 {
+  color: var(--gray-color);
+  font-size: var(--p-font-size);
+  margin: 35px 0px;
+}
+.testimonials-section__testimonials-container > div:nth-child(2) p span {
+  padding: 0 10px;
+}
+
+.home-slide {
+  line-height: 0 !important;
+  margin: 0 1.2rem;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.home-slide img {
+  width: 100%;
+}
+.home-slide p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 1.8rem;
+  background: white;
+  width: 90%;
+  padding: 2rem 2rem;
+  box-sizing: border-box;
+  left: 5%;
+  border-radius: 5px;
+}
+
+.home-services > div:first-child h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.alice-carousel__dots-item:not(.__custom):hover,
+.alice-carousel__dots-item:not(.__custom).__active {
+  background-color: var(--secondary-color);
+}/*# sourceMappingURL=home.css.map */

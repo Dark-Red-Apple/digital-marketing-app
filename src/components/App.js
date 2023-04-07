@@ -1,11 +1,12 @@
-import logo from "../assets/images/logo.svg"
+// import logo from "../assets/images/logo.svg";
 // import "../assets/styles/App.css"
-import "../assets/styles/index.scss"
-import Header from "./Header.js"
-import HomeSlider from "./HomeSlider"
-import HomeAboutUs from "./HomeAboutUs"
-import Testimonials from "./Testimonials"
-import HomeServices from "./HomeServices"
+import "../assets/styles/index.scss";
+import Header from "./Header.js";
+import HomeSlider from "./HomeSlider";
+import HomeAboutUs from "./HomeAboutUs";
+import Testimonials from "./Testimonials";
+import HomeServices from "./HomeServices";
+import Footer from "./Footer";
 
 // import Page from "./Page"
 
@@ -17,8 +18,10 @@ function App() {
       <HomeAboutUs />
       <HomeServices />
       <Testimonials />
+      <Footer />
+     
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
