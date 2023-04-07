@@ -3,7 +3,7 @@ $class-name: ".header";
 #{$class-name} {
   display: flex;
   flex-direction: row;
-  background: #0c8195;
+  background: var(--primary-color);
   color: white;
   padding: 1.5rem 13rem;
 

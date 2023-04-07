@@ -24,6 +24,9 @@ export default function HomeServices() {
           },
         }}
         disableButtonsControls
+        autoPlay={true}
+        autoPlayInterval={4000}
+        infinite={true}
         // stagePadding={{
         //   paddingLeft: 10, // in pixels
         //   paddingRight: 10,

@@ -2,11 +2,11 @@
   cursor: pointer;
 
   &__yellow {
-    border: 2px solid #ffcb00;
+    border: 2px solid var(--secondary-color);
     padding: 0.8rem 1.8rem;
     display: inline-block;
     border-radius: 33px;
-    color: #ffcb00;
+    color: var(--secondary-color);
     font-weight: 600;
     -webkit-transition: 0.1s linear;
     -moz-transition: 0.1s linear;

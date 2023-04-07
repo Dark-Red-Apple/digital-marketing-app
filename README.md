@@ -19,7 +19,11 @@
 
 This projects contains a web app for a sample digital marketing business.
 <br>
+<<<<<<< HEAD
 You can see a demo Here: <a href="https://digital-marketing-app-two.vercel.app/" target="__blank">demo</a>.
+=======
+You can see a demo Here: <a href="https://digtal-marketing-app.vercel.app/" target="__blank">demo</a>.
+>>>>>>> e0414e932aadb7cf39e572df10bab47a1c728f52
 
 ## How To Use
 

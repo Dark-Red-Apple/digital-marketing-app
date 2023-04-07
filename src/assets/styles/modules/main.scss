@@ -147,8 +147,9 @@ body {
   --h1-font-size: 42px;
   --h2-font-size: 32px;
   --h3-font-size: 24px;
-  --p-font-size: 18px;
   --p-color: #666262;
+  --gray-color: #909090;
+  --base-font-family: 'Plain-Light', sans-serif;
   --project-bg: #f0f8ff;
   --gray-color: #909090;
 }
@@ -226,4 +227,8 @@ section {
   font-weight: bold;
   text-align: center;
   padding: 0.7rem;
+}
+.small, small {
+  font-size: 80%;
+  font-weight: 400;
 }
