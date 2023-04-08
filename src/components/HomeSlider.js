@@ -3,6 +3,7 @@ import workingGirl from "../assets/images/working-girl.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { icon } from "@fortawesome/fontawesome-svg-core/import.macro"
 import Container from "./Container"
+import FadeInWhenVisible from "./FadeInWhenVisible"
 
 export default function HomeSlider() {
   return (
@@ -10,16 +11,24 @@ export default function HomeSlider() {
       <Container>
         <div className="slider-main__content-container">
           <div>
-            <h1>We are ready for your digital marketing</h1>
-            <a className="btn btn__white">Let us discuss together!</a>
-            <strong>
-              <FontAwesomeIcon icon={icon({ name: "phone" })} style={{ marginRight: "5px" }} />
-              +99 080 070 4224
-              {/* <i className="fas fa-phone-alt"></i>+99 080 070 4224 */}
-            </strong>
+            <FadeInWhenVisible>
+              <h1>We are ready for your digital marketing</h1>
+            </FadeInWhenVisible>
+            <FadeInWhenVisible transitionDelay={0.1}>
+              <a className="btn btn__white">Let us discuss together!</a>
+            </FadeInWhenVisible>
+            <FadeInWhenVisible transitionDelay={0.2}>
+              <strong>
+                <FontAwesomeIcon icon={icon({ name: "phone" })} style={{ marginRight: "5px" }} />
+                +99 080 070 4224
+                {/* <i className="fas fa-phone-alt"></i>+99 080 070 4224 */}
+              </strong>
+            </FadeInWhenVisible>
           </div>
           <div>
-            <img src={workingGirl} alt="" />
+            <FadeInWhenVisible transitionDelay={0.3}>
+              <img src={workingGirl} alt="" />
+            </FadeInWhenVisible>
           </div>
         </div>
       </Container>

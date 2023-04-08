@@ -1,9 +1,8 @@
-import React from "react";
-import Container from "./Container";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { icon } from "@fortawesome/fontawesome-svg-core/import.macro";
-import { faBell } from '@fortawesome/free-solid-svg-icons'
-
+import React from "react"
+import Container from "./Container"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { icon } from "@fortawesome/fontawesome-svg-core/import.macro"
+import { faBell } from "@fortawesome/free-solid-svg-icons"
 
 function Footer() {
   return (
@@ -83,23 +82,22 @@ function Footer() {
             <div>
               <ul>
                 <li>
-                <span className="icon">
-                
-                <FontAwesomeIcon icon={faBell} />
+                  <span className="icon">
+                    <FontAwesomeIcon icon={faBell} />
                   </span>
                 </li>
                 <li>
-                <span className="icon">
-                <FontAwesomeIcon icon={icon({ name: "envelope" })} />
+                  <span className="icon">
+                    <FontAwesomeIcon icon={icon({ name: "envelope" })} />
                   </span>
                 </li>
                 <li>
-                <span className="icon">
+                  <span className="icon">
                     <FontAwesomeIcon icon={icon({ name: "phone" })} />
                   </span>
                 </li>
                 <li>
-                <span className="icon">
+                  <span className="icon">
                     <FontAwesomeIcon icon={icon({ name: "home" })} />
                   </span>
                 </li>
@@ -109,7 +107,7 @@ function Footer() {
         </div>
       </Container>
     </section>
-  );
+  )
 }
 
-export default Footer;
+export default Footer
