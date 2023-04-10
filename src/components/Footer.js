@@ -3,12 +3,14 @@ import Container from "./Container"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { icon } from "@fortawesome/fontawesome-svg-core/import.macro"
 import { faBell } from "@fortawesome/free-solid-svg-icons"
+import FadeInWhenVisible from "./FadeInWhenVisible";
 
 function Footer() {
   return (
     <section className="footer-section">
       <Container>
         <div className="footer-section__footer-container">
+        <FadeInWhenVisible>
           <div className="footer-section__footer-container__top">
             <div>
               <h1>
@@ -56,6 +58,8 @@ function Footer() {
               </p>
             </div>
           </div>
+          </FadeInWhenVisible>
+          <FadeInWhenVisible transitionDelay={0.1}>
           <div className="footer-section__footer-container__bottom">
             <div>
               <p>
@@ -104,6 +108,7 @@ function Footer() {
               </ul>
             </div>
           </div>
+          </FadeInWhenVisible>
         </div>
       </Container>
     </section>
