@@ -7,7 +7,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 function Footer() {
   return (
-    <section className="dma-footer-section text-sm-center">
+    <section className="dma-footer-section ">
       <Container>
         <div className="dma-footer-section__footer-container">
           <FadeInWhenVisible>
