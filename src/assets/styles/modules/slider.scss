@@ -1,4 +1,4 @@
-.slider-main {
+.dma-slider-main {
   //   height: 400px;
   //   width: 100%;
   overflow: hidden;
@@ -15,11 +15,10 @@
     justify-content: center;
     > div {
       //   padding: 0 5rem;
-      width: 50%;
-      padding: 0 1.5em;
+      // width: 50%;
+      // padding: 0 1.5em;
     }
     div:first-child {
-      text-align: left;
       color: var(--white-color);
       //   > h1,
       //   a {

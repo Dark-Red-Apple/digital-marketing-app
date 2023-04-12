@@ -25,7 +25,7 @@ export default function HomeServices() {
           },
         }}
         disableButtonsControls
-        autoPlay={true}
+        // autoPlay={true}
         autoPlayInterval={4000}
         infinite={true}
         // stagePadding={{
@@ -36,7 +36,7 @@ export default function HomeServices() {
     )
   }
   return (
-    <section className="section home-services project">
+    <section className="section dma-home-services dma-project">
       <FadeInWhenVisible oncePlay={false}>
         <div>
           <h2>

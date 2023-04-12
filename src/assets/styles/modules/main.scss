@@ -162,7 +162,7 @@ body {
   line-height: 1.5;
 }
 
-.container {
+.dma-container {
   width: 100%;
   margin: 0 auto;
   @media screen and (min-width: 1200px) {
@@ -193,7 +193,7 @@ p {
   margin-bottom: 1em;
 }
 
-.section-container {
+.dma-section-container {
   padding: 0px 1.2em;
 }
 section {
@@ -201,24 +201,24 @@ section {
   padding-bottom: 8em;
   overflow: hidden;
 }
-.project {
+.dma-project {
   background-color: var(--project-bg);
 }
-.project-info small {
+.dma-project-info small {
   // font-family: Plain-Bold;
   color: var(--gray-color);
   position: relative;
   top: 2px;
 }
-.project-info .green-link {
+.dma-project-info .dma-green-link {
   color: var(--primary-color);
 }
-.pb-0,
-.py-0 {
+.dma-pb-0,
+.dma-py-0 {
   padding-bottom: 0 !important;
 }
 
-.arrow-link {
+.dma-arrow-link {
   border-radius: 100%;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
@@ -226,15 +226,21 @@ section {
   -o-border-radius: 100%;
   background-color: var(--primary-color);
   color: var(--white-color);
-  height: 20px;
-  width: 20px;
+  height: 40px;
+  width: 40px;
   display: inline-block;
   font-weight: bold;
   text-align: center;
   padding: 0.7rem;
 }
-.small,
+.dma-small,
 small {
   font-size: 80%;
   font-weight: 400;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }

@@ -5,7 +5,7 @@ import { icon } from "@fortawesome/fontawesome-svg-core/import.macro"
 export default function HomeSlide(props) {
   const handleDragStart = (e) => e.preventDefault()
   return (
-    <div className="home-slide project-info">
+    <div className="dma-home-slide dma-project-info">
       <img src={props.source} onDragStart={handleDragStart} role="presentation" />
       <p>
         <span>
@@ -13,10 +13,10 @@ export default function HomeSlide(props) {
             {props.content}
           </small>
           <h3>
-            <a className="green-link">{props.linkContent}</a>
+            <a className="dma-green-link">{props.linkContent}</a>
           </h3>
         </span>
-        <a className="arrow-link">
+        <a className="dma-arrow-link">
           {" "}
           <FontAwesomeIcon icon={icon({ name: "angle-right" })} />
         </a>

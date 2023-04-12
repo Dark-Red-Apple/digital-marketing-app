@@ -7,11 +7,11 @@ import FadeInWhenVisible from "./FadeInWhenVisible"
 
 function Footer() {
   return (
-    <section className="footer-section">
+    <section className="dma-footer-section">
       <Container>
-        <div className="footer-section__footer-container">
+        <div className="dma-footer-section__footer-container">
           <FadeInWhenVisible>
-            <div className="footer-section__footer-container__top">
+            <div className="dma-footer-section__footer-container__top">
               <div>
                 <h1>
                   <span> We make creative </span>
@@ -48,7 +48,7 @@ function Footer() {
               <div>
                 <h4>Our Studio</h4>
                 <p>
-                  <span className="icon">
+                  <span className="dma-icon">
                     <FontAwesomeIcon icon={icon({ name: "home" })} />
                   </span>
                   <span> Av. Lúcio Costa - Barra da </span>
@@ -60,7 +60,7 @@ function Footer() {
             </div>
           </FadeInWhenVisible>
           <FadeInWhenVisible transitionDelay={0.1} oncePlay={false}>
-            <div className="footer-section__footer-container__bottom">
+            <div className="dma-footer-section__footer-container__bottom">
               <div>
                 <p>
                   Copyright © 2020 Your Company
@@ -86,22 +86,22 @@ function Footer() {
               <div>
                 <ul>
                   <li>
-                    <span className="icon">
+                    <span className="dma-icon">
                       <FontAwesomeIcon icon={faBell} />
                     </span>
                   </li>
                   <li>
-                    <span className="icon">
+                    <span className="dma-icon">
                       <FontAwesomeIcon icon={icon({ name: "envelope" })} />
                     </span>
                   </li>
                   <li>
-                    <span className="icon">
+                    <span className="dma-icon">
                       <FontAwesomeIcon icon={icon({ name: "phone" })} />
                     </span>
                   </li>
                   <li>
-                    <span className="icon">
+                    <span className="dma-icon">
                       <FontAwesomeIcon icon={icon({ name: "home" })} />
                     </span>
                   </li>

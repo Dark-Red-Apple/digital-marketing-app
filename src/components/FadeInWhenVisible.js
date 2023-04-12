@@ -5,8 +5,9 @@ function FadeInWhenVisible({ children, scrollRef, transitionDelay, oncePlay }) {
   return (
     <motion.div
       initial="hidden"
+      animate="hidden"
       whileInView="visible"
-      viewport={{ once: oncePlay, root: scrollRef }}
+      viewport={{ once: true, root: scrollRef }}
       transition={{ duration: 0.7, delay: transitionDelay }}
       variants={{
         visible: { opacity: 1, transform: "translateY(0)" },

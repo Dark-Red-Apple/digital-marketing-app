@@ -5,9 +5,9 @@ import FadeInWhenVisible from "./FadeInWhenVisible"
 
 export default function Testimonials() {
   return (
-    <div className="testimonials-section">
+    <div className="dma-testimonials-section">
       <Container>
-        <div className="testimonials-section__testimonials-container">
+        <div className="dma-testimonials-section__testimonials-container">
           <FadeInWhenVisible>
             <div>
               <img src={FemaleAvatar} alt="" />
@@ -18,7 +18,7 @@ export default function Testimonials() {
               <h4>CLIENT TESTIMONIALS</h4>
             </FadeInWhenVisible>
             <FadeInWhenVisible transitionDelay={0.1}>
-              <div className="quote"></div>
+              <div className="dma-quote"></div>
             </FadeInWhenVisible>
             <FadeInWhenVisible transitionDelay={0.2}>
               <h2>Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo.</h2>

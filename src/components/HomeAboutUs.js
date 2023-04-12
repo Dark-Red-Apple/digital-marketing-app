@@ -6,9 +6,9 @@ import FadeInWhenVisible from "./FadeInWhenVisible"
 function HomeAboutUs() {
   const scrollRef = useRef(null)
   return (
-    <section className="home__about-us pb-0">
+    <section className="dma-home__about-us pb-0">
       <Container>
-        <div className="section-container home__about-us__container">
+        <div className="dma-section-container dma-home__about-us__container">
           <FadeInWhenVisible oncePlay={false}>
             <h2>
               The best
@@ -29,7 +29,7 @@ function HomeAboutUs() {
             </p>
           </FadeInWhenVisible>
           <FadeInWhenVisible transitionDelay={0.2} oncePlay={false}>
-            <div className="home__about-us__container__about__image">
+            <div className="dma-home__about-us__container__about__image">
               <img src={officeImage} alt="office" />
             </div>
           </FadeInWhenVisible>

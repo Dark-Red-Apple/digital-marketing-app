@@ -1,4 +1,4 @@
-.home {
+.dma-home {
   &__about-us {
     &__container {
       @media only screen and (min-width: 1200px) {
@@ -22,7 +22,7 @@
   }
 }
 
-.testimonials-section {
+.dma-testimonials-section {
   background-color: #ffffff;
   &__testimonials-container {
     align-items: center;
@@ -70,7 +70,7 @@
   }
 }
 
-.home-slide {
+.dma-home-slide {
   line-height: 0 !important;
   margin: 0 1.2rem;
   overflow: hidden;
@@ -99,7 +99,7 @@
   }
 }
 
-.home-services {
+.dma-home-services {
   > div:first-child {
     h2 {
       text-align: center;

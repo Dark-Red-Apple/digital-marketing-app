@@ -1,28 +1,57 @@
-import React from "react"
+import { useState } from "react"
+// import { Container } from "react-bootstrap"
+import NavAnimation from "./NavAnimation"
+import { Container, Row, Col } from "react-bootstrap"
 
 export default function Header() {
   return (
-    <header className="header">
-      <div className="header__logo btn btn--yellow">
-        <i></i>
-        <a href="./">Digital Trend</a>
-      </div>
-      <div className="header__menu">
-        <nav className="nav-links">
-          <li className="btn btn--yellow">
-            <a>Home</a>
-          </li>
-          <li className="btn btn--yellow">
-            <a>Blog</a>
-          </li>
-          <li className="btn btn--yellow">
-            <a>About us</a>
-          </li>
-          <li>
-            <a className="btn btn__yellow">Contact</a>
-          </li>
-        </nav>
-      </div>
+    <header className="dma-header">
+      <Container className="p-lg-3">
+        <Row>
+          <Col xs={8} sm={6} md={6} lg={4}>
+            <div className="dma-header__logo dma-btn dma-btn--yellow">
+              <i></i>
+              <a href="./">Digital Trend</a>
+            </div>
+          </Col>
+          <Col lg={8} className="d-none d-lg-block">
+            <div className="dma-header__menu">
+              <nav className="dma-nav-links">
+                <li className="dma-btn dma-btn--yellow">
+                  <a>Home</a>
+                </li>
+                <li className="dma-btn dma-btn--yellow">
+                  <a>Blog</a>
+                </li>
+                <li className="dma-btn dma-btn--yellow">
+                  <a>About us</a>
+                </li>
+                <li>
+                  <a className="dma-btn dma-btn__yellow">Contact</a>
+                </li>
+              </nav>
+            </div>
+          </Col>
+          <Col xs={4} sm={6} md={6} className="d-lg-none position-relative">
+            <NavAnimation>
+              <nav className="nav-links">
+                <li className="dma-btn dma-btn--yellow">
+                  <a>Home</a>
+                </li>
+                <li className="dma-btn dma-btn--yellow">
+                  <a>Blog</a>
+                </li>
+                <li className="dma-btn dma-btn--yellow">
+                  <a>About us</a>
+                </li>
+                <li>
+                  <a className="dma-btn dma-btn__yellow">Contact</a>
+                </li>
+              </nav>
+            </NavAnimation>
+          </Col>
+        </Row>
+      </Container>
     </header>
   )
 }
