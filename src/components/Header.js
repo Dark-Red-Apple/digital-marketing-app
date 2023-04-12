@@ -3,6 +3,7 @@ import { useState } from "react"
 import NavAnimation from "./NavAnimation"
 import { Container, Row, Col } from "react-bootstrap"
 
+
 export default function Header() {
   return (
     <header className="dma-header">

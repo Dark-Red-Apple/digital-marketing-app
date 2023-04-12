@@ -3,16 +3,14 @@
   &__footer-container {
     &__top {
       margin-bottom: 80px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      > div:first-child {
+
+      &__brand {
         h1 {
           color: #ffffff;
         }
       }
-      > div:nth-child(2),
-      > div:nth-child(3) {
+      &__contact,
+      &__address {
         h4 {
           margin-bottom: 25px;
         }
@@ -25,11 +23,11 @@
       }
     }
     &__bottom {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-
-      > div:nth-child(2) {
+      &__copyright {
+        margin-bottom: 30px;
+      }
+      &__menu {
+        margin-bottom: 40px;
         ul {
           display: flex;
           flex-direction: row;
@@ -41,7 +39,7 @@
         }
       }
 
-      > div:nth-child(3) {
+      &__socialnetwork {
         ul {
           display: flex;
           flex-direction: row;
