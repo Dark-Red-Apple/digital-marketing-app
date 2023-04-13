@@ -13,12 +13,12 @@ const NavAnimation = ({ children }) => {
 
   return (
     <>
-      <div style={{ marginLeft: "auto", width: "50px", height: "50px", color: "white", cursor: "pointer", textAlign: "center", lineHeight: "50px", fontSize: "2rem" }} onClick={() => setIsOpen((isOpen) => !isOpen)}>
-        <FontAwesomeIcon icon={icon({ name: "bars" })} style={{ marginRight: "5px" }} />
+      <div className="mobile-menu-bars ml-auto" onClick={() => setIsOpen((isOpen) => !isOpen)}>
+        <FontAwesomeIcon icon={icon({ name: "bars" })} />
       </div>
-      <motion.div style={{ top: 0, right: 0, color: "black", zIndex: "500", position: "fixed", backgroundColor: "white", height: "100vh", width: "100vw" }} animate={isOpen ? "open" : "closed"} variants={variants}>
-        <div style={{ marginLeft: "auto", width: "50px", height: "50px", color: "black", cursor: "pointer", textAlign: "center", lineHeight: "50px", fontSize: "2rem" }} onClick={() => setIsOpen((isOpen) => !isOpen)}>
-          <FontAwesomeIcon icon={icon({ name: "times" })} style={{ marginRight: "5px" }} />
+      <motion.div className="mobile-menu-container" animate={isOpen ? "open" : "closed"} variants={variants}>
+        <div className="mobile-menu-container__close" onClick={() => setIsOpen((isOpen) => !isOpen)}>
+          <FontAwesomeIcon icon={icon({ name: "times" })} />
         </div>
         {children}
         {/* {isOpen} */}
