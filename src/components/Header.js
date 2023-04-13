@@ -4,6 +4,7 @@ import NavAnimation from "./NavAnimation"
 import { Container, Row, Col } from "react-bootstrap"
 import servicesTechnology from "../assets/images/services-technology.jpg"
 
+
 export default function Header() {
   return (
     <header className="dma-header">
