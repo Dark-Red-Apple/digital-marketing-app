@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { icon } from "@fortawesome/fontawesome-svg-core/import.macro"
@@ -10,6 +10,14 @@ const variants = {
 
 const NavAnimation = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false)
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("noscroll")
+    } else {
+      document.body.classList.remove("noscroll")
+    }
+  }, [isOpen])
 
   return (
     <>

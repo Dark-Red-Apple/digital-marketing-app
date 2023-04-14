@@ -244,3 +244,8 @@ small {
     max-width: 1200px;
   }
 }
+
+.noscroll {
+  overflow: hidden;
+  // height: 100vh;
+}
