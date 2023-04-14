@@ -1,21 +1,22 @@
-$class-name: ".dma-header";
-$mobile-class-name: ".dma-header-mobile";
+$class-name: #{$prefix}header;
+$mobile-class-name: #{$prefix}header-mobile;
 
-#{$class-name} {
+.#{$class-name} {
   display: flex;
   flex-direction: row;
   background: var(--primary-color);
   color: white;
   // padding: 1.5rem 13rem;
-
-  div {
-    //  flex-basis: 50%;
-  }
   &__logo {
-    font-size: 2em;
+    font-size: 1.5em;
     // margin-right: 1.5rem;
     display: flex;
     align-items: center;
+    height: 100%;
+
+    @media screen and (min-width: 769px) {
+      font-size: 2em;
+    }
   }
   &__menu {
     margin-left: auto;
@@ -34,7 +35,7 @@ $mobile-class-name: ".dma-header-mobile";
     }
   }
 }
-#{$mobile-class-name} {
+.#{$mobile-class-name} {
   &__logo {
     font-size: 2em;
 
@@ -52,7 +53,7 @@ $mobile-class-name: ".dma-header-mobile";
       align-items: center;
       font-size: var(--menu-font-size);
       li {
-        padding: 1.5rem 1.5rem;
+        padding: 1rem 1.5rem;
         cursor: pointer;
       }
     }
@@ -64,7 +65,7 @@ $mobile-class-name: ".dma-header-mobile";
   }
 }
 
-.mobile-menu-bars {
+.#{$prefix}mobile-menu-bars {
   width: 50px;
   height: 50px;
   color: white;
@@ -75,7 +76,7 @@ $mobile-class-name: ".dma-header-mobile";
   margin-left: auto;
 }
 
-.mobile-menu-container {
+.#{$prefix}mobile-menu-container {
   top: 0;
   right: 0;
   color: black;
@@ -86,6 +87,7 @@ $mobile-class-name: ".dma-header-mobile";
   width: 100%;
   padding: 2rem;
   overflow: scroll;
+
   &__close {
     margin-left: "auto";
     width: 50px;
@@ -94,6 +96,9 @@ $mobile-class-name: ".dma-header-mobile";
     cursor: pointer;
     text-align: center;
     line-height: 50px;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 }

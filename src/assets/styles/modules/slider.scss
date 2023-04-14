@@ -1,4 +1,4 @@
-.dma-slider-main {
+.#{$prefix}slider-main {
   //   height: 400px;
   //   width: 100%;
   overflow: hidden;
@@ -13,19 +13,14 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    > div {
-      //   padding: 0 5rem;
-      // width: 50%;
-      // padding: 0 1.5em;
-    }
     div:first-child {
       color: var(--white-color);
-      //   > h1,
-      //   a {
-      //     margin-bottom: 0.5em;
-      //   }
+
       h1 {
-        font-size: 2.8rem;
+        font-size: 2;
+        @media screen and (min-width: 769px) {
+          font-size: 2.8rem;
+        }
         line-height: 1.5em;
         margin-bottom: 0.2em;
       }

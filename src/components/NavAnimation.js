@@ -21,11 +21,11 @@ const NavAnimation = ({ children }) => {
 
   return (
     <>
-      <div className="mobile-menu-bars ml-auto" onClick={() => setIsOpen((isOpen) => !isOpen)}>
+      <div className="dma-mobile-menu-bars ml-auto" onClick={() => setIsOpen((isOpen) => !isOpen)}>
         <FontAwesomeIcon icon={icon({ name: "bars" })} />
       </div>
-      <motion.div className="mobile-menu-container" animate={isOpen ? "open" : "closed"} variants={variants}>
-        <div className="mobile-menu-container__close" onClick={() => setIsOpen((isOpen) => !isOpen)}>
+      <motion.div className="dma-mobile-menu-container" animate={isOpen ? "open" : "closed"} variants={variants}>
+        <div className="dma-mobile-menu-container__close" onClick={() => setIsOpen((isOpen) => !isOpen)}>
           <FontAwesomeIcon icon={icon({ name: "times" })} />
         </div>
         {children}

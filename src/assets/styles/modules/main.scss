@@ -1,3 +1,4 @@
+// @use "sass:math";
 html,
 body,
 div,
@@ -162,7 +163,7 @@ body {
   line-height: 1.5;
 }
 
-.dma-container {
+.#{$prefix}container {
   width: 100%;
   margin: 0 auto;
   @media screen and (min-width: 1200px) {
@@ -174,14 +175,14 @@ strong {
   color: var(--secondary-color);
 }
 h1 {
-  font-size: var(--h1-font-size);
+  font-size: calc(var(--h1-font-size) * 0.8);
 }
 h2 {
-  font-size: var(--h2-font-size);
+  font-size: calc(var(--h2-font-size) * 0.8);
   margin-bottom: 1.2rem;
 }
 h3 {
-  font-size: var(--h3-font-size);
+  font-size: calc(var(--h3-font-size) * 0.8);
 }
 h4 {
   color: var(--gray-color);
@@ -193,32 +194,36 @@ p {
   margin-bottom: 1em;
 }
 
-.dma-section-container {
+.#{$prefix}section-container {
   padding: 0px 1.2em;
 }
 section {
-  padding-top: 8em;
-  padding-bottom: 8em;
+  padding-top: 3em;
+  padding-bottom: 3em;
   overflow: hidden;
+  @media screen and (min-width: 769px) {
+    padding-top: 8em;
+    padding-bottom: 8em;
+  }
 }
-.dma-project {
+.#{$prefix}project {
   background-color: var(--project-bg);
 }
-.dma-project-info small {
+.#{$prefix}project-info small {
   // font-family: Plain-Bold;
   color: var(--gray-color);
   position: relative;
   top: 2px;
 }
-.dma-project-info .dma-green-link {
+.#{$prefix}project-info .#{$prefix}green-link {
   color: var(--primary-color);
 }
-.dma-pb-0,
-.dma-py-0 {
+.#{$prefix}pb-0,
+.#{$prefix}py-0 {
   padding-bottom: 0 !important;
 }
 
-.dma-arrow-link {
+.#{$prefix}arrow-link {
   border-radius: 100%;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
@@ -233,7 +238,7 @@ section {
   text-align: center;
   padding: 0.7rem;
 }
-.dma-small,
+.#{$prefix}small,
 small {
   font-size: 80%;
   font-weight: 400;
@@ -242,6 +247,18 @@ small {
 @media (min-width: 1200px) {
   .container {
     max-width: 1200px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  h1 {
+    font-size: var(--h1-font-size);
+  }
+  h2 {
+    font-size: var(--h2-font-size);
+  }
+  h3 {
+    font-size: var(--h3-font-size);
   }
 }
 

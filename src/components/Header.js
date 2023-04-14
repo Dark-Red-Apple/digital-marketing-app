@@ -4,10 +4,9 @@ import NavAnimation from "./NavAnimation"
 import { Container, Row, Col } from "react-bootstrap"
 import servicesTechnology from "../assets/images/services-technology.jpg"
 
-
 export default function Header() {
   return (
-    <header className="dma-header">
+    <header className="dma-header pt-2 pt-md-0">
       <Container className="p-lg-3">
         <Row>
           <Col xs={8} sm={6} md={6} lg={4}>
