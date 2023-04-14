@@ -3,7 +3,10 @@
   //   width: 100%;
   overflow: hidden;
   position: relative;
-  padding: 6rem 0;
+  padding: 4rem 0;
+  @media screen and (min-width: 769px) {
+    padding: 6rem 0;
+  }
   &__bg {
     background: linear-gradient(170deg, var(--primary-color) 64%, var(--white-color) 30%);
   }
