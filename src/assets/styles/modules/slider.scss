@@ -12,10 +12,12 @@
   }
 
   &__content-container {
+    margin-top: 7rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    // text-align: center;
     div:first-child {
       color: var(--white-color);
 

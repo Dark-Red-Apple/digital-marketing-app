@@ -10,7 +10,7 @@ export default function HomeSlider() {
     <div className="dma-home-slider dma-slider-main dma-slider-main__bg">
       <Container className="dma-slider-main__content-container">
         <Row>
-          <Col xs={12} md={12} lg={6} className="text-sm-center text-lg-left">
+          <Col xs={12} md={12} lg={6}>
             <div>
               <FadeInWhenVisible oncePlay={true}>
                 <h1>We are ready for your digital marketing</h1>

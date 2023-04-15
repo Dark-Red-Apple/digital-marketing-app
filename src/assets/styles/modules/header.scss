@@ -4,8 +4,13 @@ $mobile-class-name: #{$prefix}header-mobile;
 .#{$class-name} {
   display: flex;
   flex-direction: row;
-  background: var(--primary-color);
+  background: var(--menu-bg);
   color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 500;
   // padding: 1.5rem 13rem;
   &__logo {
     font-size: 1.5em;
@@ -78,7 +83,7 @@ $mobile-class-name: #{$prefix}header-mobile;
 
 .#{$prefix}mobile-menu-container {
   top: 0;
-  right: 0;
+  right: -100%;
   color: black;
   z-index: 500;
   position: fixed;
