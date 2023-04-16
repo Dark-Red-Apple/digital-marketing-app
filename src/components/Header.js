@@ -50,10 +50,8 @@ export default function Header() {
                 <li className="dma-btn dma-btn--yellow">
                   <a href="/about-us">About us</a>
                 </li>
-                <li className="dma-btn dma-btn__yellow">
-                  <a href="/contact-us" className="">
-                    Contact
-                  </a>
+                <li className="dma-btn dma-btn--yellow">
+                  <a href="/contact-us">Contact</a>
                 </li>
               </nav>
               <div className="dma-header-mobile__menu__promotion-images">
