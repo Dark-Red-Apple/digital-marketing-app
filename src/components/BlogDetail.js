@@ -4,6 +4,7 @@ import authorAvatar from "../assets/images/male-avatar.png"
 import postImg from "../assets/images/blog-header-image.jpg"
 import FadeInWhenVisible from "./FadeInWhenVisible"
 import ScaleWhenVisible from "./ScaleWhenVisible"
+import BlogCommentForm from "./BlogCommentForm"
 
 function BlogDetail() {
   return (
@@ -56,6 +57,7 @@ function BlogDetail() {
               </Col>
             </FadeInWhenVisible>
           </Row>
+          <BlogCommentForm />
         </Container>
       </section>
     </>

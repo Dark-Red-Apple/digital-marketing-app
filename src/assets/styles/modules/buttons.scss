@@ -48,7 +48,15 @@
       background-color: #000000;
     }
   }
-
+  &__green {
+    width: 100%;
+    background: var(--primary-color);
+    padding: 1rem;
+    border-radius: 3em;
+    border: none;
+    font-size: var(--p-font-size);
+    color: var(--white-color);
+  }
   &--yellow {
     -webkit-transition: 0.1s linear;
     -moz-transition: 0.1s linear;
@@ -58,5 +66,8 @@
     &:hover {
       color: #ffcb00;
     }
+  }
+  &:focus {
+    outline: none;
   }
 }

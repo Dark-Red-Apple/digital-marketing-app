@@ -198,7 +198,7 @@ h4 {
   text-transform: uppercase;
 }
 a {
-  color: var(--link-color);
+  // color: var(--link-color);
   font-weight: normal;
   text-decoration: none;
 }
@@ -291,7 +291,7 @@ small {
     background-color: var(--project-bg);
     border-radius: 5px;
     box-shadow: none;
-    padding: 0.5em 1em;
+    padding: 1em 1em;
     margin: 0.7em 0;
     &::placeholder {
       color: var(--gray-color);
