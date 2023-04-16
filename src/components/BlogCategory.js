@@ -15,7 +15,7 @@ export default function Blog() {
         <Container>
           <Row className="mb-4">
             <FadeInWhenVisible>
-              <div className="mb-3 mt-5 py-5 text-center">
+              <div className=" py-5 text-center">
                 <h1 className="mb-4">Digital Trend Blog</h1>
               </div>
             </FadeInWhenVisible>
@@ -27,7 +27,7 @@ export default function Blog() {
                   <div className="dma-blog__header__info">
                     <h4 className="text-uppercase text-info">Creative</h4>
                     <h3>
-                      <a className="dma-btn--yellow" href="/blog/detail">
+                      <a className="dma-btn--yellow" href="/blog/0">
                         The Key to Creative Work is Knowing When to Walk Away
                       </a>
                     </h3>
@@ -43,7 +43,7 @@ export default function Blog() {
                     <div className="dma-blog__sidebar__info">
                       <h4 className="text-uppercase text-danger">Design</h4>
                       <h3 className="dma-btn dma-btn--yellow">
-                        <a href="/blog/detail">Why Truly Accessible Design Benefits Everyone</a>
+                        <a href="/blog/0">Why Truly Accessible Design Benefits Everyone</a>
                       </h3>
                     </div>
                   </div>
@@ -54,7 +54,7 @@ export default function Blog() {
                     <div className="dma-blog__sidebar__info">
                       <h4 className="text-uppercase text-success">Lifestyle</h4>
                       <h3 className="dma-btn dma-btn--yellow">
-                        <a href="/blog/detail">Be Humble About What You Know</a>
+                        <a href="/blog/0">Be Humble About What You Know</a>
                       </h3>
                     </div>
                   </div>
@@ -65,7 +65,7 @@ export default function Blog() {
                     <div className="dma-blog__sidebar__info">
                       <h4 className="text-uppercase text-primary">Coding</h4>
                       <h3 className="dma-btn dma-btn--yellow">
-                        <a href="/blog/detail">The Mistakes I Made As a Coding Beginner</a>
+                        <a href="/blog/0">The Mistakes I Made As a Coding Beginner</a>
                       </h3>
                     </div>
                   </div>

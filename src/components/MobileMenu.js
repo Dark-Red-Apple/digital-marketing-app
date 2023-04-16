@@ -8,7 +8,7 @@ const variants = {
   closed: { opacity: 0, x: "100%" },
 }
 
-const NavAnimation = ({ children }) => {
+const MobileMenu = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
@@ -35,4 +35,4 @@ const NavAnimation = ({ children }) => {
   )
 }
 
-export default NavAnimation
+export default MobileMenu

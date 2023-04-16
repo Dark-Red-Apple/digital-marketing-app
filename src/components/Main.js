@@ -6,6 +6,8 @@ import ContactUs from "./ContactUs"
 import BlogCategory from "./BlogCategory"
 import AboutUs from "./AboutUs"
 import Services from "./Services"
+import NotFound from "./NotFound"
+import BlogDetail from "./BlogDetail"
 // import Navigation2 from "./Navigation2"
 
 function Main() {
@@ -20,6 +22,8 @@ function Main() {
           <Route path="/blog" element={<BlogCategory />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/blog/:id" element={<BlogDetail />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
       <Footer />

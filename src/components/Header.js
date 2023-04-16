@@ -1,6 +1,6 @@
 import { useState } from "react"
 // import { Container } from "react-bootstrap"
-import NavAnimation from "./NavAnimation"
+import MobileMenu from "./MobileMenu"
 import { Container, Row, Col } from "react-bootstrap"
 import servicesTechnology from "../assets/images/services-technology.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -31,13 +31,15 @@ export default function Header() {
                   <a href="/about-us">About us</a>
                 </li>
                 <li className="dma-btn ">
-                  <a className="dma-btn__yellow" href="/contact-us">Contact</a>
+                  <a className="dma-btn__yellow" href="/contact-us">
+                    Contact
+                  </a>
                 </li>
               </nav>
             </div>
           </Col>
           <Col xs={4} sm={6} md={6} className="d-lg-none position-relative dma-header-mobile__menu">
-            <NavAnimation>
+            <MobileMenu>
               <nav className="dma-nav-links">
                 <li className="dma-btn dma-btn--yellow">
                   <a href="/">Home</a>
@@ -57,7 +59,7 @@ export default function Header() {
               <div className="dma-header-mobile__menu__promotion-images">
                 <img src={servicesTechnology} />
               </div>
-            </NavAnimation>
+            </MobileMenu>
           </Col>
         </Row>
       </Container>
