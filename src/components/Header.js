@@ -15,7 +15,7 @@ export default function Header() {
             <div className="dma-header__logo dma-btn dma-btn--yellow">
               <i></i>
               <FontAwesomeIcon icon={icon({ name: "line-chart" })} style={{ marginRight: "5px" }} />
-              <a href="./">Digital Trend</a>
+              <a href="/">Digital Trend</a>
             </div>
           </Col>
           <Col xs={6} sm={7} md={8} lg={8} className="d-none d-lg-block">

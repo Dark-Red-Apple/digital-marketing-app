@@ -12,7 +12,7 @@ function BlogDetail() {
       <section>
         <Container>
           <Row>
-            <Col lg={8} xs={12} className=" mx-auto ">
+            <Col lg={8} xs={12} className=" mx-auto mt-4">
               <div className="d-flex align-items-center flex-column">
                 <FadeInWhenVisible>
                   <h3 className="text-center text-info">Creative Work</h3>
