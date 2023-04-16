@@ -1,0 +1,48 @@
+.#{$prefix}blog {
+  &__header {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-radius-small);
+    -webkit-border-radius: var(--border-radius-small);
+    -moz-border-radius: var(--border-radius-small);
+    -ms-border-radius: var(--border-radius-small);
+    -o-border-radius: var(--border-radius-small);
+    height: 15rem;
+    @media screen and (min-width: 769px) {
+      height: initial;
+    }
+    img {
+      width: 100%;
+    }
+    &__info {
+      background: linear-gradient(transparent, rgba(0, 0, 0, 0.95));
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      padding: 2em;
+      h3 {
+        @media screen and (min-width: 769px) {
+          max-width: 70%;
+        }
+      }
+      a {
+        color: var(--white-color);
+      }
+    }
+  }
+  &__sidebar {
+    img {
+      width: 159px;
+      border-radius: var(--border-radius-small);
+      -webkit-border-radius: var(--border-radius-small);
+      -moz-border-radius: var(--border-radius-small);
+      -ms-border-radius: var(--border-radius-small);
+      -o-border-radius: var(--border-radius-small);
+      margin-right: 1em;
+    }
+    h3 {
+      font-size: 1.2em;
+    }
+  }
+}
