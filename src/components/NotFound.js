@@ -7,7 +7,7 @@ function NotFound() {
       <Container>
         <Row>
           <div>
-            <h1>Page Not Found</h1>
+            <h2>Page Not Found</h2>
           </div>
         </Row>
       </Container>

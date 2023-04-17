@@ -5,27 +5,31 @@ import FadeInWhenVisible from "./FadeInWhenVisible"
 export default function BlogCommentForm() {
   return (
     <Row>
-      <Col lg={8} sm={12} className="mx-auto">
+      <Col lg={7} sm={12} className="mx-auto mt-5">
         <h3>Leave a comment</h3>
         <form className="dma-blog-comment-form">
           <Row>
-            <FadeInWhenVisible>
-              <Col lg={6} md={6} xs={12}>
+            <Col lg={6} md={6} xs={12}>
+              <FadeInWhenVisible>
                 <input className="dma-form-control" placeholder="Name" />
-              </Col>
-              <Col lg={6} md={12} xs={12}>
+              </FadeInWhenVisible>
+            </Col>
+            <Col lg={6} md={12} xs={12}>
+              <FadeInWhenVisible transitionDelay={0.1}>
                 <input className="dma-form-control" placeholder="Email" />
-              </Col>
+              </FadeInWhenVisible>
+            </Col>
 
-              <Col xs={12}>
+            <Col xs={12}>
+              <FadeInWhenVisible transitionDelay={0.2}>
                 <textarea className="dma-form-control" placeholder="Message"></textarea>
-              </Col>
-            </FadeInWhenVisible>
-            <FadeInWhenVisible transitionDelay={0.1}>
-              <Col xs={12} lg={6} className="mx-auto">
+              </FadeInWhenVisible>
+            </Col>
+            <Col xs={12} lg={6} className="mx-auto">
+              <FadeInWhenVisible transitionDelay={0.3}>
                 <button className="dma-btn dma-btn__green dma-form-control">Submit Comment</button>
-              </Col>
-            </FadeInWhenVisible>
+              </FadeInWhenVisible>
+            </Col>
           </Row>
         </form>
       </Col>

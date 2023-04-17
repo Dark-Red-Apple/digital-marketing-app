@@ -17,7 +17,7 @@ export default function Testimonials() {
             </FadeInWhenVisible>
           </Col>
 
-          <Col lg={6} xs={12} md={6}>
+          <Col lg={6} xs={12} md={6} className="d-flex align-items-center">
             <div className="dma-testimonials-section__content">
               <FadeInWhenVisible>
                 <h4>CLIENT TESTIMONIALS</h4>

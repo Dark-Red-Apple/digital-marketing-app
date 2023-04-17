@@ -36,14 +36,15 @@ function BlogDetail() {
       </ScaleWhenVisible>
       <section>
         <Container>
-          <Row>
+          <Row className="mb-5">
             <FadeInWhenVisible>
               <Col lg={8} xs={12} className=" mx-auto ">
                 {/* <p> */}
                 <h2>Etiam quis metus elementum, tempor risus vel, condimentum orci.</h2>
-                <p>Mauris in convallis nunc, non facilisis arcu. Nunc sapien nulla, interdum at diam non, aliquam vestibulum leo. Fusce laoreet malesuada ante, consectetur consequat ante tempor et. Quisque ac risus ligula. Suspendisse bibendum tortor at est placerat auctor. Phasellus tortor est, bibendum eu ex eu, tincidunt efficitur nunc. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                <p>Mauris in convallis nunc, non facilisis arcu. Nunc sapien nulla, interdum at diam non, aliquam vestibulum leo. Fusce laoreet malesuada ante, consectetur consequat ante tempor et. Quisque ac risus ligula. </p>
+                <p>Suspendisse bibendum tortor at est placerat auctor. Phasellus tortor est, bibendum eu ex eu, tincidunt efficitur nunc. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
                 <p>
-                  <ul className="">
+                  <ul className="dma-list-group-yellow py-3">
                     <li>Quisque at condimentum est. Duis sollicitudin urna id elit pulvinar placerat. Ut ac dui in ex vulputate dictum.</li>
                     <li>Mauris vitae tellus nisi. Morbi rutrum lacus sit amet volutpat viverra.</li>
                     <li>Integer maximus sem ut ipsum blandit elementum. Nullam sollicitudin accumsan commodo.</li>
@@ -52,7 +53,7 @@ function BlogDetail() {
                 <p>Sed leo nisl, posuere at molestie ac, suscipit auctor mauris. Etiam quis metus elementum, tempor risus vel, condimentum orci.</p>
                 <h2>Curabitur tempus vel libero lobortis feugiat</h2>
                 <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris in convallis nunc, non facilisis arcu. Nunc sapien nulla, interdum at diam non, aliquam vestibulum leo.</p>
-                <p>Phasellus dapibus ex sed dolor blandit, efficitur iaculis ipsum scelerisque. Cras elementum nibh id felis sagittis, sit amet pellentesque ligula porttitor. Fusce laoreet malesuada ante, consectetur consequat ante tempor et. Quisque ac risus ligula.</p>
+                <blockquote>Phasellus dapibus ex sed dolor blandit, efficitur iaculis ipsum scelerisque. Cras elementum nibh id felis sagittis, sit amet pellentesque ligula porttitor. Fusce laoreet malesuada ante, consectetur consequat ante tempor et. Quisque ac risus ligula.</blockquote>
                 {/* </p> */}
               </Col>
             </FadeInWhenVisible>
