@@ -20,7 +20,7 @@ function BlogDetail() {
                 <FadeInWhenVisible transitionDelay={0.1}>
                   <h1 className="text-center">9 useful things to learn and practice for your digital marketing</h1>
                   <div className="dma-client-info d-flex justify-content-center align-items-center mt-3">
-                    <img className="img-fluid" src={authorAvatar} />
+                    <img className="img-fluid " src={authorAvatar} />
                     <p>Sweet Candy</p>
                   </div>
                 </FadeInWhenVisible>
@@ -31,7 +31,7 @@ function BlogDetail() {
       </section>
       <ScaleWhenVisible>
         <div className="dma">
-          <img className="img-fluid p-0" src={postImg} alt="" />
+          <img className="img-fluid p-0 w-100" src={postImg} alt="" />
         </div>
       </ScaleWhenVisible>
       <section>

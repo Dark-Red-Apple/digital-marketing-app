@@ -12,7 +12,7 @@ export default function HomeSlide(props) {
           <small style={{ display: "block" }} className="">
             {props.content}
           </small>
-          <h3>
+          <h3 className="mt-2">
             <a className="dma-green-link">{props.linkContent}</a>
           </h3>
         </span>
