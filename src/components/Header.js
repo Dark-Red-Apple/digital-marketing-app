@@ -5,6 +5,7 @@ import { Container, Row, Col } from "react-bootstrap"
 import servicesTechnology from "../assets/images/services-technology.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { icon } from "@fortawesome/fontawesome-svg-core"
+import Login from "./Login"
 
 export default function Header() {
   return (
@@ -12,14 +13,14 @@ export default function Header() {
       <Container className="p-lg-3">
         <Row>
           <Col xs={6} sm={5} md={4} lg={4}>
-            <div className="dma-header__logo dma-btn dma-btn--yellow">
+            <div className="dma-header__logo dma-btn dma-btn--yellow ">
               <i></i>
               <FontAwesomeIcon icon={icon({ name: "line-chart" })} style={{ marginRight: "5px" }} />
               <a href="/">Digital Trend</a>
             </div>
           </Col>
-          <Col xs={6} sm={7} md={8} lg={8} className="d-none d-lg-block">
-            <div className="dma-header__menu">
+          <Col xs={6} sm={7} md={8} lg={8} className="d-flex justify-content-end align-items-center">
+            <div className="dma-header__menu d-none d-lg-block">
               <nav className="dma-nav-links">
                 <li className="dma-btn dma-btn--yellow">
                   <a href="/">Home</a>
@@ -37,27 +38,30 @@ export default function Header() {
                 </li>
               </nav>
             </div>
-          </Col>
-          <Col xs={4} sm={6} md={6} className="d-lg-none position-relative dma-header-mobile__menu">
-            <MobileMenu>
-              <nav className="dma-nav-links">
-                <li className="dma-btn dma-btn--yellow">
-                  <a href="/">Home</a>
-                </li>
-                <li className="dma-btn dma-btn--yellow">
-                  <a href="/blog">Blog</a>
-                </li>
-                <li className="dma-btn dma-btn--yellow">
-                  <a href="/about-us">About us</a>
-                </li>
-                <li className="dma-btn dma-btn--yellow">
-                  <a href="/contact-us">Contact</a>
-                </li>
-              </nav>
-              <div className="dma-header-mobile__menu__promotion-images">
-                <img src={servicesTechnology} />
-              </div>
-            </MobileMenu>
+            <div className="dma-mobile-user d-flex justify-content-center align-items-center">
+              <Login />
+            </div>
+            <div className="d-lg-none position-relative dma-header-mobile__menu">
+              <MobileMenu>
+                <nav className="dma-nav-links">
+                  <li className="dma-btn dma-btn--yellow">
+                    <a href="/">Home</a>
+                  </li>
+                  <li className="dma-btn dma-btn--yellow">
+                    <a href="/blog">Blog</a>
+                  </li>
+                  <li className="dma-btn dma-btn--yellow">
+                    <a href="/about-us">About us</a>
+                  </li>
+                  <li className="dma-btn dma-btn--yellow">
+                    <a href="/contact-us">Contact</a>
+                  </li>
+                </nav>
+                <div className="dma-header-mobile__menu__promotion-images">
+                  <img src={servicesTechnology} />
+                </div>
+              </MobileMenu>
+            </div>
           </Col>
         </Row>
       </Container>

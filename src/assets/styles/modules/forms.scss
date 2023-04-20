@@ -1,4 +1,6 @@
-.#{$prefix}blog-comment-form,.#{$prefix}contact-us-form {
+.#{$prefix}blog-comment-form,
+.#{$prefix}contact-us-form,
+#{$prefix}login-form {
   margin-bottom: 1rem;
   input:not([type="checkbox"]),
   textarea {
