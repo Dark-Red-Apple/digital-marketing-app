@@ -12,6 +12,7 @@ export default function Login() {
     <>
       {/* <div> */}
       <a
+        className="dma-btn--yellow"
         onClick={() => {
           setIsOpen(!isOpen)
         }}

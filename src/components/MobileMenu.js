@@ -22,7 +22,7 @@ const MobileMenu = ({ children, classList }) => {
 
   return (
     <>
-      <div className="dma-mobile-menu-bars">
+      <div className="dma-mobile-menu-bars dma-btn--yellow">
         <FontAwesomeIcon onClick={() => setIsOpen((isOpen) => !isOpen)} icon={icon({ name: "bars" })} />
       </div>
       <motion.div className="dma-mobile-menu-container" transition={{ duration: 0.3, delay: 0.1 }} initial={{ opacity: 0, x: "100%", right: 0 }} animate={isOpen ? variants["open"] : "closed"} variants={variants}>
