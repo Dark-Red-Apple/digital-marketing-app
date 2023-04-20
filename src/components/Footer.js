@@ -31,7 +31,7 @@ function Footer() {
                     <p>
                       {/* <i class="fa fa-phone mr-2 footer-icon"></i> */}
                       <a href="tel:+99 080 070 4224">
-                        <span className="icon">
+                        <span className="dma-icon me-2 d-inline-block">
                           <FontAwesomeIcon icon={icon({ name: "phone" })} />
                         </span>
 
@@ -39,11 +39,11 @@ function Footer() {
                       </a>
                     </p>
 
-                    <p>
-                      <a href="mailto:hello@company.com">
-                        <span className="icon">
+                    <p className=" mt-1">
+                      <a href="mailto:hello@company.com" className="dma-btn dma-btn--yellow">
+                        <a className="dma-icon me-2 d-inline-block">
                           <FontAwesomeIcon icon={icon({ name: "envelope" })} />
-                        </span>
+                        </a>
                         <span> hello@company.com</span>
                       </a>
                     </p>
@@ -54,13 +54,12 @@ function Footer() {
                   <div className="dma-footer-section__footer-container__top__address">
                     <h4>Our Studio</h4>
                     <p>
-                      <span className="dma-icon">
+                      <span className="dma-icon me-1">
                         <FontAwesomeIcon icon={icon({ name: "home" })} />
                       </span>
-                      <span> Av. Lúcio Costa - Barra da </span>
-                      <br />
-                      Tijuca, Rio de Janeiro - RJ,
-                      <br /> Brazil
+                      <span> Halifax, </span>
+                      Nova Scotia
+                      <br /> Canada
                     </p>
                   </div>
                 </Col>
@@ -76,7 +75,9 @@ function Footer() {
                     <p>
                       Copyright © 2020 Your Company
                       <br />
-                      <a href="https://templatemo.com">Design: TemplateMo</a>
+                      <a className="dma-btn dma-btn--yellow" href="https://github.com/Dark-Red-Apple/digital-marketing-app">
+                        Implemented: Dark_Red_Apple&Ali{" "}
+                      </a>
                     </p>
                   </div>
                 </Col>
@@ -85,13 +86,19 @@ function Footer() {
                   <div className="dma-footer-section__footer-container__bottom__menu">
                     <ul>
                       <li>
-                        <a href="#">Stories</a>
+                        <a className="dma-btn dma-btn--yellow" href="#">
+                          Stories
+                        </a>
                       </li>
                       <li>
-                        <a href="#">Work with us</a>
+                        <a className="dma-btn dma-btn--yellow" href="#">
+                          Work with us
+                        </a>
                       </li>
                       <li>
-                        <a href="#">Privacy</a>
+                        <a className="dma-btn dma-btn--yellow" href="#">
+                          Privacy
+                        </a>
                       </li>
                     </ul>
                   </div>
@@ -101,24 +108,24 @@ function Footer() {
                   <div className="dma-footer-section__footer-container__bottom__socialnetwork">
                     <ul>
                       <li>
-                        <span className="dma-icon">
+                        <a className=" dma-btn dma-btn--yellow ">
                           <FontAwesomeIcon icon={faBell} />
-                        </span>
+                        </a>
                       </li>
                       <li>
-                        <span className="dma-icon">
+                        <a className="dma-btn dma-btn--yellow ">
                           <FontAwesomeIcon icon={icon({ name: "envelope" })} />
-                        </span>
+                        </a>
                       </li>
                       <li>
-                        <span className="dma-icon">
+                        <a className="dma-btn dma-btn--yellow ">
                           <FontAwesomeIcon icon={icon({ name: "phone" })} />
-                        </span>
+                        </a>
                       </li>
                       <li>
-                        <span className="dma-icon">
+                        <a className="dma-btn dma-btn--yellow ">
                           <FontAwesomeIcon icon={icon({ name: "home" })} />
-                        </span>
+                        </a>
                       </li>
                     </ul>
                   </div>

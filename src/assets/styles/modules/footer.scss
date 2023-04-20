@@ -17,9 +17,6 @@
         p {
           margin: 0 !important;
         }
-        .icon {
-          color: yellow;
-        }
       }
     }
     &__bottom {
@@ -52,4 +49,8 @@
       }
     }
   }
+}
+
+.#{$prefix}icon {
+  color: var(--secondary-color);
 }
