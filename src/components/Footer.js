@@ -13,7 +13,7 @@ function Footer() {
           <FadeInWhenVisible>
             <div className="dma-footer-section__footer-container__top">
               <Row>
-                <Col lg={4} md={4} xs={12}>
+                <Col lg={5} md={4} xs={12}>
                   <div className="dma-footer-section__footer-container__top__brand">
                     <h1>
                       <span> We make creative </span>
@@ -24,8 +24,8 @@ function Footer() {
                   </div>
                 </Col>
 
-                <Col lg={4} md={4} xs={12}>
-                  <div className="dma-footer-section__footer-container__top__contact">
+                <Col lg={3} md={4} xs={12}>
+                  <div className="mt-5 mt-md-0 dma-footer-section__footer-container__top__contact">
                     <h4>Contact Info</h4>
 
                     <p>
@@ -39,7 +39,7 @@ function Footer() {
                       </a>
                     </p>
 
-                    <p className=" mt-1">
+                    <p className="mt-2">
                       <a href="mailto:hello@company.com" className="dma-btn dma-btn--yellow">
                         <a className="dma-icon me-2 d-inline-block">
                           <FontAwesomeIcon icon={icon({ name: "envelope" })} />
@@ -51,15 +51,14 @@ function Footer() {
                 </Col>
 
                 <Col lg={4} md={4} xs={12}>
-                  <div className="dma-footer-section__footer-container__top__address">
+                  <div className="mt-5 mt-md-0 dma-footer-section__footer-container__top__address">
                     <h4>Our Studio</h4>
                     <p>
                       <span className="dma-icon me-1">
                         <FontAwesomeIcon icon={icon({ name: "home" })} />
                       </span>
                       <span> Halifax, </span>
-                      Nova Scotia
-                      <br /> Canada
+                      Nova Scotia, Canada
                     </p>
                   </div>
                 </Col>
