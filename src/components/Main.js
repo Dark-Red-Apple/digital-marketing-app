@@ -14,8 +14,9 @@ function Main() {
   return (
     <>
       {/* <Navigation2 /> */}
-      <Header />
+      
       <BrowserRouter>
+      <Header />
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route path="/contact-us" element={<ContactUs />} />
@@ -25,8 +26,9 @@ function Main() {
           <Route path="/blog/:id" element={<BlogDetail />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
-      <Footer />
+    
     </>
   )
 }

@@ -395,3 +395,7 @@ blockquote {
     top: 0;
   }
 }
+
+.#{$prefix}icon , .#{$prefix}sec-color-link.dma-link  {
+  color: var(--secondary-color);
+}
