@@ -1,6 +1,4 @@
 import { useState } from "react"
-import { NavLink } from "react-router-dom"
-import { useParams, NavLink, Routes, Route } from "react-router-dom"
 
 function Login() {
   const [email, setEmail] = useState(null)
@@ -41,12 +39,6 @@ function Login() {
           Login
         </button>
       </form>
-      <p className="mt-4">
-        Dont have an account?{" "}
-        <NavLink className="dma-sec-color-link dma-link" to={"/blog/register"}>
-          Create one
-        </NavLink>{" "}
-      </p>
     </div>
   )
 }
