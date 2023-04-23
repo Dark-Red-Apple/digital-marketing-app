@@ -41,7 +41,7 @@ function AboutUs() {
               <div className="overflow-hidden dma-team__image mb-5 mx-auto">
                 <img src={darkRedAppleImage} />
                 <p className="d-flex justify-content-center align-items-center">
-                  <a>Learn More</a>
+                  <a className="dma-btn">Learn More</a>
                 </p>
               </div>
               <div>
@@ -53,7 +53,7 @@ function AboutUs() {
               <div className="overflow-hidden dma-team__image mb-5 mx-auto">
                 <img />
                 <p className="d-flex justify-content-center align-items-center">
-                  <a>Learn More</a>
+                  <a className="dma-btn">Learn More</a>
                 </p>
               </div>
               <div>
@@ -65,7 +65,7 @@ function AboutUs() {
               <div className="overflow-hidden dma-team__image mb-5 mx-auto">
                 <img src={cocoImage} />
                 <p className="d-flex justify-content-center align-items-center">
-                  <a>Learn More</a>
+                  <a className="dma-btn">Learn More</a>
                 </p>
               </div>
               <div>
