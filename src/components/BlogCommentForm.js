@@ -2,7 +2,7 @@ import React from "react"
 import { Row, Col } from "react-bootstrap"
 import FadeInWhenVisible from "./FadeInWhenVisible"
 
-export default function BlogCommentForm() {
+function BlogCommentForm() {
   return (
     <Row>
       <Col lg={7} sm={12} className="mx-auto mt-5">
@@ -36,3 +36,5 @@ export default function BlogCommentForm() {
     </Row>
   )
 }
+
+export default BlogCommentForm

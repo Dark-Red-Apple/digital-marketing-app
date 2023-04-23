@@ -10,7 +10,7 @@ import HomeSlide from "./HomeSlide"
 import FadeInWhenVisible from "./FadeInWhenVisible"
 import { Container, Row } from "react-bootstrap"
 
-export default function HomeServices() {
+function HomeServices() {
   const items = [<HomeSlide source={image1} content={" lorem 1"} address={""} linkContent={"Ultimate HealthCare"} />, <HomeSlide source={image2} content={" lorem 2"} address={""} linkContent={"Ultimate HealthCare"} />, <HomeSlide source={image3} content={" lorem 3"} address={""} linkContent={"Ultimate HealthCare"} />, <HomeSlide source={image4} content={" lorem 4"} address={""} linkContent={"Ultimate HealthCare"} />, <HomeSlide source={image5} content={" lorem 5"} address={""} linkContent={"Ultimate HealthCare"} />]
 
   const Gallery = () => {
@@ -56,3 +56,5 @@ export default function HomeServices() {
     </section>
   )
 }
+
+export default HomeServices

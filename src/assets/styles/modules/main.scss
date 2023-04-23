@@ -396,6 +396,33 @@ blockquote {
   }
 }
 
-.#{$prefix}icon , .#{$prefix}sec-color-link.dma-link  {
+.#{$prefix}icon,
+.#{$prefix}sec-color-link.dma-link {
   color: var(--secondary-color);
+}
+
+.#{$prefix}team {
+  &__image {
+    height: 18rem;
+    width: 18rem;
+    position: relative;
+    border-radius: 50%;
+
+    p {
+      background-color: #ffffff7a;
+      height: 20%;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      color: var(--primary-color);
+      margin: 0;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      background: var(--secondary-color);
+      overflow: hidden;
+      object-fit: cover;
+    }
+  }
 }

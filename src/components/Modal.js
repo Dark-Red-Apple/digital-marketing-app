@@ -1,17 +1,40 @@
-import { useEffect } from "react"
+import { useEffect, useContext } from "react"
+import DispatchContext from "../DispatchContext"
 import { motion } from "framer-motion"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { icon } from "@fortawesome/fontawesome-svg-core/import.macro"
-import { Row, Col } from "react-bootstrap"
-import { useLocation } from "react-router-dom"
+import { useLocation, useNavigate } from "react-router-dom"
 
-export default function Modal({ isOpen, setIsOpen, setModalType, modalType, children }) {
+function Modal({ isOpen, setIsOpen, setModalType, modalType, children }) {
   const location = useLocation()
+  const navigate = useNavigate()
+  const appDispatch = useContext(DispatchContext)
 
-  function updateUrl(url) {
-    window.history.pushState(null, null, url)
+  function updateUrl(name, url) {
+    window.history.pushState(name, null, url)
   }
 
+  function handlePopstate(e) {
+    const path = window.location.pathname
+    if (path === "/login" && modalType !== "login" && isOpen) {
+      navigate(location.pathname)
+      setModalType("login")
+
+      setIsOpen(true)
+    } else if (path === "/register" && modalType !== "register" && isOpen) {
+      navigate(location.pathname)
+      setModalType("register")
+
+      setIsOpen(true)
+    } else {
+      setIsOpen(false)
+      setModalType("")
+      // appDispatch({ type: "title", value: "dfdf" })
+    }
+
+    e.stopPropagation()
+    e.preventDefault()
+  }
   const variants = {
     open: { opacity: 1, display: "block" },
     hidden: {
@@ -33,10 +56,24 @@ export default function Modal({ isOpen, setIsOpen, setModalType, modalType, chil
   }
   useEffect(() => {
     // alert(modalType)
-    if (modalType == "login" || modalType == "register") {
-      updateUrl(`/${modalType}`)
+    if (modalType === "login") {
+      var foo = { foo: true }
+      updateUrl(foo, `/${modalType}`)
+      // if we don't have else it wont work properly!
+    } else if (modalType === "register") {
+      var boo = { boo: true }
+      updateUrl(boo, `/${modalType}`)
     } else {
-      updateUrl(location.pathname)
+      var too = { too: true }
+      updateUrl(too, location.pathname)
+    }
+
+    // Add event listener for popstate event
+    window.addEventListener("popstate", handlePopstate)
+
+    // Remove event listener on component unmount
+    return () => {
+      window.removeEventListener("popstate", handlePopstate)
     }
   }, [modalType])
 
@@ -51,3 +88,5 @@ export default function Modal({ isOpen, setIsOpen, setModalType, modalType, chil
     </motion.section>
   )
 }
+
+export default Modal

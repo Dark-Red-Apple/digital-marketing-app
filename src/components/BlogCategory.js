@@ -1,4 +1,5 @@
-import React from "react"
+import { useContext, useEffect } from "react"
+import DispatchContext from "../DispatchContext"
 import { Container, Row, Col } from "react-bootstrap"
 import EmailNewsletter from "./EmailNewsletter"
 import FadeInWhenVisible from "./FadeInWhenVisible"
@@ -8,7 +9,10 @@ import blogImage2 from "../assets/images/blog-sidebar-image.jpg"
 import blogImage3 from "../assets/images/blog-sidebar-image01.jpg"
 import blogImage4 from "../assets/images/blog-sidebar-image02.jpg"
 
-export default function Blog() {
+function Blog() {
+  const appDispatch = useContext(DispatchContext)
+  useEffect(() => appDispatch({ type: "title", value: "Blog" }))
+
   return (
     <>
       <section className="dma-blog">
@@ -79,3 +83,5 @@ export default function Blog() {
     </>
   )
 }
+
+export default Blog

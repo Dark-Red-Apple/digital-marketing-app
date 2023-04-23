@@ -1,4 +1,3 @@
-// import { useRef } from "react"
 import { motion } from "framer-motion"
 
 function ScaleWhenVisible({ children, scrollRef, transitionDelay, oncePlay }) {

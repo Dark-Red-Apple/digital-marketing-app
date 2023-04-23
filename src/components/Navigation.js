@@ -1,16 +1,9 @@
-// import Container from "react-bootstrap/Container"
-// import Nav from "react-bootstrap/Nav"
-// import Navbar from "react-bootstrap/Navbar"
-// import NavDropdown from "react-bootstrap/NavDropdown"
-import { Navbar, Nav, Container } from "react-bootstrap"
-// import "bootstrap/dist/css/bootstrap.css"
+import { Navbar, Nav } from "react-bootstrap"
 import React from "react"
 
-export default function Navigation() {
+function Navigation() {
   return (
     <Navbar expand="sm" collapseOnSelect>
-      {/* <Container> */}
-      {/* <Navbar.Brand href="/">Digital Marketing App</Navbar.Brand> */}
       <Navbar.Toggle ari-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="nav-links">
@@ -28,7 +21,8 @@ export default function Navigation() {
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
-      {/* </Container> */}
     </Navbar>
   )
 }
+
+export default Navigation

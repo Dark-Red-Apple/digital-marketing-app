@@ -5,7 +5,7 @@ import { icon } from "@fortawesome/fontawesome-svg-core/import.macro"
 import { Container, Row, Col } from "react-bootstrap"
 import FadeInWhenVisible from "./FadeInWhenVisible"
 
-export default function HomeSlider() {
+function HomeSlider() {
   return (
     <div className="dma-home-slider dma-slider-main dma-slider-main__bg">
       <Container className="dma-slider-main__content-container">
@@ -40,3 +40,5 @@ export default function HomeSlider() {
     </div>
   )
 }
+
+export default HomeSlider

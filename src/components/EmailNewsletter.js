@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap"
 import newsLetter from "../assets/images/newsletter.png"
 import FadeInWhenVisible from "./FadeInWhenVisible"
 
-export default function EmailNewsletter() {
+function EmailNewsletter() {
   return (
     <Row className="dma-news-letter__main mt-5 p-lg-5 pt-5 justify-content-center">
       <Col xs={12} md={5}>
@@ -42,3 +42,5 @@ export default function EmailNewsletter() {
     </Row>
   )
 }
+
+export default EmailNewsletter

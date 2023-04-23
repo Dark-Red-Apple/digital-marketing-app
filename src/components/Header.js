@@ -1,14 +1,11 @@
-import { useState } from "react";
-// import { Container } from "react-bootstrap"
-import MobileMenu from "./MobileMenu";
-import { Container, Row, Col } from "react-bootstrap";
-import servicesTechnology from "../assets/images/services-technology.jpg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { icon } from "@fortawesome/fontawesome-svg-core";
-import Login from "./Login";
-import HeaderUser from "./HeaderUser";
+import MobileMenu from "./MobileMenu"
+import { Container, Row, Col } from "react-bootstrap"
+import servicesTechnology from "../assets/images/services-technology.jpg"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { icon } from "@fortawesome/fontawesome-svg-core"
+import HeaderUser from "./HeaderUser"
 
-export default function Header() {
+function Header() {
   return (
     <header className="dma-header pt-2 pt-md-0">
       <Container className="p-lg-3">
@@ -16,20 +13,11 @@ export default function Header() {
           <Col xs={6} sm={5} md={4} lg={4}>
             <div className="dma-header__logo dma-btn dma-btn--yellow ">
               <i></i>
-              <FontAwesomeIcon
-                icon={icon({ name: "line-chart" })}
-                style={{ marginRight: "5px" }}
-              />
+              <FontAwesomeIcon icon={icon({ name: "line-chart" })} style={{ marginRight: "5px" }} />
               <a href="/">Digital Trend</a>
             </div>
           </Col>
-          <Col
-            xs={6}
-            sm={7}
-            md={8}
-            lg={8}
-            className="d-flex justify-content-end align-items-center"
-          >
+          <Col xs={6} sm={7} md={8} lg={8} className="d-flex justify-content-end align-items-center">
             <div className="dma-header__menu d-none d-lg-block">
               <nav className="dma-nav-links">
                 <li className="dma-btn dma-btn--yellow">
@@ -76,5 +64,7 @@ export default function Header() {
         </Row>
       </Container>
     </header>
-  );
+  )
 }
+
+export default Header

@@ -2,7 +2,7 @@ import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { icon } from "@fortawesome/fontawesome-svg-core/import.macro"
 
-export default function HomeSlide(props) {
+function HomeSlide(props) {
   const handleDragStart = (e) => e.preventDefault()
   return (
     <div className="dma-home-slide dma-project-info">
@@ -24,3 +24,5 @@ export default function HomeSlide(props) {
     </div>
   )
 }
+
+export default HomeSlide

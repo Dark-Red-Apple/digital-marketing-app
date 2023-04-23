@@ -1,10 +1,16 @@
-import React from "react";
-import { Container, Row } from "react-bootstrap";
-import FadeInWhenVisible from "./FadeInWhenVisible";
-import ContactUsForm from "./ContactUsForm";
-import GoogleMap from "./GoogleMap";
+import { useContext, useEffect } from "react"
+import DispatchContext from "../DispatchContext"
+import { Container, Row } from "react-bootstrap"
+import FadeInWhenVisible from "./FadeInWhenVisible"
+import ContactUsForm from "./ContactUsForm"
+import GoogleMap from "./GoogleMap"
 
-export default function ContactUs() {
+function ContactUs() {
+  const appDispatch = useContext(DispatchContext)
+  useEffect(() => {
+    appDispatch({ type: "title", value: "Contact Us" })
+  }, [])
+
   return (
     <section className="dma-contactUs">
       <Container>
@@ -15,8 +21,7 @@ export default function ContactUs() {
               <strong>creative</strong> projects
             </h1>
             <p>
-              or email us at{" "}
-              <a href="mailto:hello@company.com">hello@company.com</a>
+              or email us at <a href="mailto:hello@company.com">hello@company.com</a>
             </p>
             <p>
               Please follow our{" "}
@@ -31,5 +36,7 @@ export default function ContactUs() {
         <GoogleMap />
       </Container>
     </section>
-  );
+  )
 }
+
+export default ContactUs

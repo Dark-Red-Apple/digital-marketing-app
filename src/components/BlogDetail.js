@@ -1,4 +1,5 @@
-import React from "react"
+import { useContext, useEffect } from "react"
+import DispatchContext from "../DispatchContext"
 import { Container, Row, Col } from "react-bootstrap"
 import authorAvatar from "../assets/images/male-avatar.png"
 import postImg from "../assets/images/blog-header-image.jpg"
@@ -7,6 +8,12 @@ import ScaleWhenVisible from "./ScaleWhenVisible"
 import BlogCommentForm from "./BlogCommentForm"
 
 function BlogDetail() {
+  const appDispatch = useContext(DispatchContext)
+
+  useEffect(() => {
+    appDispatch({ type: "title", value: "Blog Detail" })
+  }, [])
+
   return (
     <>
       <section>

@@ -1,25 +1,25 @@
-import React from "react"
+import { useContext, useEffect } from "react"
+import DispatchContext from "../DispatchContext"
+import { Container, Row, Col } from "react-bootstrap"
+import RegisterForm from "./RegisterForm"
 
 function Register() {
+  const appDispatch = useContext(DispatchContext)
+
+  useEffect(() => {
+    appDispatch({ type: "title", value: "Register" })
+  }, [])
+
   return (
-    <div className="dma-register text-black text-center  w-100 ">
-      <h3>Please Register</h3>
-      <form className="dma-register-form">
-        <div className="dma-form-group mt-4 d-flex">
-          <input type="email" placeholder="Email" />
-        </div>
-        <div className="dma-form-group mt-4 d-flex">
-          <input type="text" placeholder="User Name" />
-        </div>
-        <div className="dma-form-group mt-4 d-flex">
-          <input type="password" placeholder="Password" />
-        </div>
-        <div className="dma-form-group mt-4 d-flex">
-          <input type="password" placeholder="Password" />
-        </div>
-        <button className="mt-4 dma-btn dma-btn__bg-yellow">Register</button>
-      </form>
-    </div>
+    <section>
+      <Container>
+        <Row>
+          <Col lg={6} md={7} xs={12} className="mx-auto">
+            <RegisterForm />
+          </Col>
+        </Row>
+      </Container>
+    </section>
   )
 }
 export default Register

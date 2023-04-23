@@ -3,7 +3,7 @@ import FemaleAvatar from "../assets/images/female-avatar.png"
 import FadeInWhenVisible from "./FadeInWhenVisible"
 import { Container, Row, Col } from "react-bootstrap"
 
-export default function Testimonials() {
+function Testimonials() {
   return (
     <section className="dma-testimonials-section mt-5">
       <Container>
@@ -45,3 +45,5 @@ export default function Testimonials() {
     </section>
   )
 }
+
+export default Testimonials
