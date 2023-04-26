@@ -3,6 +3,7 @@ import DispatchContext from "../DispatchContext"
 import { useImmerReducer } from "use-immer"
 import Header from "./Header"
 import Footer from "./Footer"
+import Test from "./Test"
 import { Routes, Route, BrowserRouter } from "react-router-dom"
 import HomePage from "./HomePage"
 import ContactUs from "./ContactUs"
@@ -17,6 +18,10 @@ import Register from "./Register"
 function Main() {
   const initialState = {
     title: "",
+    message: {
+      content: "",
+      type: "",
+    },
   }
   const reducerFunc = (draft, action) => {
     switch (action.type) {
@@ -42,6 +47,7 @@ function Main() {
           <Route path="/services" element={<Services />} />
           <Route path="/blog/:id" element={<BlogDetail />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/test" element={<Test />} />
           <Route path="/register" element={<Register />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

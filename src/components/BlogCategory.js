@@ -11,7 +11,7 @@ import blogImage4 from "../assets/images/blog-sidebar-image02.jpg"
 
 function Blog() {
   const appDispatch = useContext(DispatchContext)
-  useEffect(() => appDispatch({ type: "title", value: "Blog" }))
+  useEffect(() => appDispatch({ type: "title", value: "Blog" }), [])
 
   return (
     <>

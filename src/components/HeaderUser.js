@@ -28,7 +28,7 @@ function HeaderUser() {
       </NavLink>
 
       <Modal isOpen={isOpen} setIsOpen={setIsOpen} setModalType={setModalType} modalType={modalType}>
-        <Container className="h-100 d-flex align-items-center flex-column justify-content-center">
+        <Container className="d-flex align-items-center flex-column justify-content-center">
           {modalType == "login" && (
             <>
               <LoginForm />
