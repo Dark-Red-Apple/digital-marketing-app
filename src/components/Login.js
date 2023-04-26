@@ -11,18 +11,18 @@ function Login() {
     appDispatch({ type: "title", value: "Login" })
   }, [])
 
-  const [email, setEmail] = useState(null)
-  const [password, setPassword] = useState(null)
+  // const [email, setEmail] = useState(null)
+  // const [password, setPassword] = useState(null)
 
-  function validation(e) {
-    e.preventDefault()
-    if (email === null || email === "") {
-      window.alert("please fill your Email!")
-    }
-    if (password === null || password === "") {
-      window.alert("please fill your Password!")
-    }
-  }
+  // function validation(e) {
+  //   e.preventDefault()
+  //   if (email === null || email === "") {
+  //     window.alert("please fill your Email!")
+  //   }
+  //   if (password === null || password === "") {
+  //     window.alert("please fill your Password!")
+  //   }
+  // }
 
   return (
     <section>
