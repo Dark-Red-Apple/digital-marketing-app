@@ -39,3 +39,76 @@
   // border-radius: 0.25rem;
   // transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
+.formErrorMessage {
+  padding: 0.4rem;
+  //background-color: var(--secondary-color);
+  //position: absolute;
+  margin: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    height: 0;
+    width: 0;
+    //background-color: var(--secondary-color);
+    border-color: transparent #f8d7da transparent transparent;
+    border-width: 0 1rem 1rem 0;
+    transform: rotate(315deg);
+    -webkit-transform: rotate(315deg);
+    -moz-transform: rotate(315deg);
+    -ms-transform: rotate(315deg);
+    -o-transform: rotate(315deg);
+    left: 10%;
+    top: -0.5rem;
+  }
+  &--visible {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    opacity: 1;
+    // display: block;
+  }
+  &-enter {
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    opacity: 0;
+    //display: none;
+    &-active {
+      transform: translateY(0);
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+      transition: 0.33s opacity ease-in-out, 0.33s transform ease-in-out;
+      // display: block;
+      opacity: 1;
+    }
+  }
+
+  &-exit {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    // display: block;
+    opacity: 1;
+    &-active {
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: 0.33s opacity ease-in-out, 0.33s transform ease-in-out;
+      -webkit-transform: translateY(-10px);
+      -moz-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+      -o-transform: translateY(-10px);
+      //display: none;
+    }
+  }
+}

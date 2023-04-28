@@ -79,7 +79,7 @@ function Modal({ isOpen, setIsOpen, setModalType, modalType, children }) {
 
   return (
     <motion.section className="dma-modal p-lg-5 p-1" initial={{ opacity: 0 }} animate={isOpen ? "open" : "hidden"} variants={variants}>
-      <motion.div className="dma-modal__content p-lg-5 p-1 py-5 py-md-1" animate={isOpen ? "open" : "hidden"} variants={scaleVariants}>
+      <motion.div className="dma-modal__content p-lg-5 p-1 py-5 py-md-1 d-md-flex justify-content-center align-items-center" animate={isOpen ? "open" : "hidden"} variants={scaleVariants}>
         <div className="dma-modal__close" onClick={closeModal}>
           <FontAwesomeIcon icon={icon({ name: "times" })} />
         </div>
