@@ -79,7 +79,7 @@ function LoginForm() {
     <div className="dma-login text-black text-center  w-100 ">
       <h3>Please Login</h3>
       <form onSubmit={validate} className="dma-login-form">
-        <div className="dma-form-group mt-4 d-flex flex-column">
+        <div className="dma-form-group mt-md-4 d-flex flex-column">
           <input
             onChange={(e) => {
               dispatch({ type: "emailRequired", value: e.target.value })
@@ -91,7 +91,7 @@ function LoginForm() {
             <div className="alert alert-danger small formErrorMessage">{state.email.message}</div>
           </CSSTransition>
         </div>
-        <div className="dma-form-group mt-4 d-flex flex-column">
+        <div className="dma-form-group mt-md-4 d-flex flex-column">
           <input
             onChange={(e) => {
               dispatch({ type: "passwordRequired", value: e.target.value })

@@ -288,31 +288,7 @@ small {
   // height: 100vh;
 }
 
-.#{$prefix}form-group {
-  margin-bottom: 1rem;
-  input:not([type="checkbox"]) {
-    width: 100%;
-    border: none;
-    background-color: var(--project-bg);
-    border-radius: 5px;
-    box-shadow: none;
-    padding: 1em 1em;
-    margin: 0.7em 0;
-    &::placeholder {
-      color: var(--gray-color);
-    }
-    &:focus {
-      outline: none;
-    }
-  }
 
-  input[type="checkbox"] {
-    padding: 0.2em 0.2em 0.2em 0;
-  }
-  label {
-    margin-left: 0.5em;
-  }
-}
 .#{$prefix}client-info {
   img {
     width: 6rem;

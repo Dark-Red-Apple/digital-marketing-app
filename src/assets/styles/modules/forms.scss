@@ -1,7 +1,10 @@
 .#{$prefix}blog-comment-form,
 .#{$prefix}contact-us-form,
 #{$prefix}login-form {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  @media screen and (min-width: 769px) {
+    margin-bottom: 1rem;
+  }
   input:not([type="checkbox"]),
   textarea {
     width: 100%;
@@ -9,8 +12,11 @@
     background-color: var(--project-bg);
     border-radius: 5px;
     box-shadow: none;
-    padding: 1em 1em;
+    padding: 0.5em 0.5em;
     margin: 0.7em 0;
+    @media screen and (min-width: 769px) {
+      padding: 1em 1em;
+    }
     &::placeholder {
       color: var(--gray-color);
     }
@@ -38,6 +44,38 @@
   // border: 1px solid #ced4da;
   // border-radius: 0.25rem;
   // transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.#{$prefix}form-group {
+  margin-bottom: 0.5rem;
+  @media screen and (min-width: 769px) {
+    margin-bottom: 1rem;
+  }
+  input:not([type="checkbox"]) {
+    width: 100%;
+    border: none;
+    background-color: var(--project-bg);
+    border-radius: 5px;
+    box-shadow: none;
+    padding: 0.5em 0.5em;
+    margin: 0.7em 0;
+    @media screen and (min-width: 769px) {
+      padding: 1em 1em;
+    }
+    &::placeholder {
+      color: var(--gray-color);
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
+  input[type="checkbox"] {
+    padding: 0.2em 0.2em 0.2em 0;
+  }
+  label {
+    margin-left: 0.5em;
+  }
 }
 
 .formErrorMessage {

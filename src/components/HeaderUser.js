@@ -35,7 +35,7 @@ function HeaderUser() {
               <p className="mt-4">
                 Don't have an account?
                 <a onClick={registerModal} className="dma-sec-color-link dma-link">
-                  &nbsp;Create one
+                  <span className="d-inline-block">&nbsp;Create one</span>
                 </a>
               </p>
             </>
