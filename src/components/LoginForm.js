@@ -36,9 +36,11 @@ function LoginForm() {
   function reducFunction(draft, action) {
     switch (action.type) {
       case "emailRequired": {
+        console.log(action.value == "" || action.value == null)
         if (action.value == "" || action.value == null) {
-          draft.email.message = "Please enter your email!"
+          console.log("sfsdf")
           draft.email.error = true
+          draft.email.message = "Please enter your email!"
         } else {
           draft.email.error = false
           // draft.email.message = ""
@@ -47,11 +49,10 @@ function LoginForm() {
       }
 
       case "validEmail": {
-        console.log(action.value != "" && action.value != null && !validEmail.test(action.value))
-        if (!validEmail.test(action.value)) {
-          draft.email.message = "Please enter a valid email!"
+        if (action.value != "" && action.value != null && !validEmail.test(action.value)) {
           draft.email.error = true
-        } else {
+          draft.email.message = "Please enter a valid email!"
+        } else if (action.value != "" && action.value != null) {
           draft.email.error = false
         }
         return
@@ -86,28 +87,26 @@ function LoginForm() {
     console.log(e.target[0].value)
 
     dispatch({ type: "emailRequired", value: e.target[0].value })
-    // dispatch({ type: "validEmail", value: e.target[0].value })
+    dispatch({ type: "validEmail", value: e.target[0].value })
     dispatch({ type: "passwordRequired", value: e.target[1].value })
     // console.log(e.target[1]);
     // dispatch({ type: "validationLogin" });
     // console.log("ali");
     // window.alert("ali ");
   }
-  // function onKeyDownEmail(e) {
-  //   if (e.key === "tab") {
-  //     console.log(e.key);
-  //     e.preventDefault();
-  //     dispatch({ type: "emailRequired", value: e.target.value });
-  //   }
-  // }
-  // function onKeyDownPassword(e) {
-  //   if (e.key === "tab") {
-  //     console.log(e.key);
-
-  //     e.preventDefault();
-  //     dispatch({ type: "passwordRequired", value: e.target.value });
-  //   }
-  // }
+  function onKeyDownEmail(e) {
+    if (e.key === "Tab") {
+      // e.preventDefault()
+      dispatch({ type: "emailRequired", value: e.target.value })
+      dispatch({ type: "validEmail", value: e.target.value })
+    }
+  }
+  function onKeyDownPassword(e) {
+    if (e.key === "Tab") {
+      // e.preventDefault()
+      dispatch({ type: "passwordRequired", value: e.target.value })
+    }
+  }
   return (
     <div className="dma-login text-black text-center  w-100 ">
       <h3>Please Login</h3>
@@ -117,7 +116,8 @@ function LoginForm() {
             // onChange={(e) => {
             //   dispatch({ type: "emailRequired", value: e.target.value })
             // }}
-            // onKeyDown={onKeyDownEmail}
+            tabIndex="1"
+            onKeyDown={onKeyDownEmail}
             type="text"
             placeholder="Email"
           />
@@ -127,19 +127,20 @@ function LoginForm() {
         </div>
         <div className="dma-form-group mt-md-4 d-flex flex-column">
           <input
+            tabIndex="2"
             // onChange={(e) => {
             //   dispatch({ type: "passwordRequired", value: e.target.value })
             // }}
-            // onKeyDown={onKeyDownPassword}
+            onKeyDown={onKeyDownPassword}
             type="password"
             placeholder="Password"
           />
-          {/* <CSSTransition in={state.password.error} classNames="formErrorMessage" timeout={330} unmountOnExit>
+          <CSSTransition in={state.password.error} classNames="formErrorMessage" timeout={330} unmountOnExit>
             <div className="alert alert-danger small formErrorMessage">{state.password.message}</div>
-          </CSSTransition> */}
+          </CSSTransition>
         </div>
 
-        <button type="submit" className="mt-4 dma-btn dma-btn__bg-yellow">
+        <button tabIndex="3" type="submit" className="mt-4 dma-btn dma-btn__bg-yellow">
           Login
         </button>
         {/* <p>{state.summerError.message}</p> */}
