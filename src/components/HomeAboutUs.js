@@ -22,9 +22,22 @@ function HomeAboutUs() {
           <Row>
             <FadeInWhenVisible transitionDelay={0.1} oncePlay={false}>
               <p className="">
-                Total 5 HTML pages are included in this template from TemplateMo website. Please check 2<a href="blog.html">blog</a>
-                pages, <a href="project-detail.html">project</a>
-                page, and <a href="contact.html">contact</a>
+                Many Page and functionalities are included in this front-end project. Please check our pages
+                <a className="dma-btn dma-btn--yellow" href="/blog">
+                  &nbsp;Blog&nbsp;
+                </a>
+                pages,{" "}
+                <a className="dma-btn dma-btn--yellow" href="/about-us">
+                  About Us&nbsp;
+                </a>
+                page, and{" "}
+                <a className="dma-btn dma-btn--yellow" href="/contact-us">
+                  Contact Us&nbsp;
+                </a>
+                page, and{" "}
+                <a className="dma-btn dma-btn--yellow" href="/login">
+                  Login&nbsp;
+                </a>
                 page.
                 <br />
                 <br />

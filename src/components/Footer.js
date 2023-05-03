@@ -44,7 +44,7 @@ function Footer() {
                         <a className="dma-icon me-2 d-inline-block">
                           <FontAwesomeIcon icon={icon({ name: "envelope" })} />
                         </a>
-                        <span> hello@company.com</span>
+                        <span> aziaabad@lakeheadu.ca</span>
                       </a>
                     </p>
                   </div>

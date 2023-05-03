@@ -1,4 +1,4 @@
-import { useContext } from "react"
+import { useContext, useEffect } from "react"
 import DispatchContext from "../DispatchContext"
 import { Container, Row, Col } from "react-bootstrap"
 import AliceCarousel from "react-alice-carousel"
