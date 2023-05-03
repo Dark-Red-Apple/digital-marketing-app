@@ -27,6 +27,7 @@ function Main() {
     switch (action.type) {
       case "title":
         draft.title = action.value
+        return
     }
   }
   const [state, dispatch] = useImmerReducer(reducerFunc, initialState)

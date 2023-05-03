@@ -46,6 +46,7 @@ function LoginForm() {
       }
       case "passwordRequired": {
         if (action.value == "" || action.value == null) {
+          console.log("sdfds")
           draft.password.message = "Please enter your password!"
           draft.password.error = true
         } else {
@@ -56,9 +57,9 @@ function LoginForm() {
       }
       case "validationLogin": {
         if (draft.email.error || draft.password.error) {
-          draft.summerError.message = "please enter  all required inputs"
+          // draft.summerError.message = "please enter  all required inputs"
         } else {
-          draft.summerError.message = ""
+          // draft.summerError.message = ""
           draft.summerError.count++
         }
         return
@@ -70,8 +71,8 @@ function LoginForm() {
 
   function validate(e) {
     e.preventDefault()
-    dispatch({ type: "emailRequired", value: e.target.value })
-    dispatch({ type: "passwordRequired", value: e.target.value })
+    dispatch({ type: "emailRequired", value: e.target[0].value })
+    dispatch({ type: "passwordRequired", value: e.target[1].value })
     dispatch({ type: "validationLogin" })
   }
 
@@ -105,7 +106,7 @@ function LoginForm() {
         </div>
 
         <button className="mt-4 dma-btn dma-btn__bg-yellow">Login</button>
-        <p>{state.summerError.message}</p>
+        {/* <p>{state.summerError.message}</p> */}
       </form>
     </div>
   )
