@@ -12,14 +12,14 @@
 <p align="center">
   A digital marketing website with react
   <br>
-  <a href="https://github.com/Dark-Red-Apple/digital-marketing-app" ><strong>Digital Marketing App</strong></a>
+  <a href="https://github.com/Dark-Red-Apple/digital-marketing-app" ><strong>Market Mission</strong></a>
 </p>
 
 # Digital Marketing App
 
 This projects contains a web app for a sample digital marketing business.
 <br>
-You can see a demo Here: <a href="https://digital-marketing-app.vercel.app/" target="__blank">demo</a>.
+You can see a demo Here: <a href="https://marketmission.vercel.app/" target="__blank">demo</a>.
 
 ## How To Use
 

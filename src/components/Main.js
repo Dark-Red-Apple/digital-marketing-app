@@ -33,7 +33,7 @@ function Main() {
   const [state, dispatch] = useImmerReducer(reducerFunc, initialState)
 
   useEffect(() => {
-    document.title = `Digital Marketing App - ${state.title}`
+    document.title = `Market Mission - ${state.title}`
   }, [state.title])
 
   return (
