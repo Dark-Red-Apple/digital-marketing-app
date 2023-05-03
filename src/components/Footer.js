@@ -35,7 +35,7 @@ function Footer() {
                           <FontAwesomeIcon icon={icon({ name: "phone" })} />
                         </span>
 
-                        <span> +99 080 070 4224</span>
+                        <span> +1 807 444 ----</span>
                       </a>
                     </p>
 
