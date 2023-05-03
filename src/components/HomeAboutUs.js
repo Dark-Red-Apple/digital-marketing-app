@@ -22,7 +22,7 @@ function HomeAboutUs() {
           <Row>
             <FadeInWhenVisible transitionDelay={0.1} oncePlay={false}>
               <p className="">
-                Many Page and functionalities are included in this front-end project. Please check our pages
+                Many Pages and functionalities are included in this front-end project. Please check our pages
                 <a className="dma-btn dma-btn--yellow" href="/blog">
                   &nbsp;Blog&nbsp;
                 </a>
