@@ -1,6 +1,6 @@
 import React from "react"
 import FemaleAvatar from "../assets/images/female-avatar.png"
-import FadeInWhenVisible from "./FadeInWhenVisible"
+import FadeInWhenVisible from  "./utility/FadeInWhenVisible"
 import { Container, Row, Col } from "react-bootstrap"
 
 function Testimonials() {

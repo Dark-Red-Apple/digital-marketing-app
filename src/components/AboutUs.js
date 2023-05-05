@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap"
 import AliceCarousel from "react-alice-carousel"
 import cocoImage from "../assets/images/coco.png"
 import darkRedAppleImage from "../assets/images/dark-red-apple.jpg"
-import FadeInWhenVisible from "./FadeInWhenVisible"
+import FadeInWhenVisible from "./utility/FadeInWhenVisible"
 
 function AboutUs() {
   const appDispatch = useContext(DispatchContext)

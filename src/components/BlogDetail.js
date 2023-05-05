@@ -3,8 +3,8 @@ import DispatchContext from "../DispatchContext"
 import { Container, Row, Col } from "react-bootstrap"
 import authorAvatar from "../assets/images/male-avatar.png"
 import postImg from "../assets/images/blog-header-image.jpg"
-import FadeInWhenVisible from "./FadeInWhenVisible"
-import ScaleWhenVisible from "./ScaleWhenVisible"
+import FadeInWhenVisible from  "./utility/FadeInWhenVisible"
+import ScaleWhenVisible from "./utility/ScaleWhenVisible"
 import BlogCommentForm from "./BlogCommentForm"
 
 function BlogDetail() {

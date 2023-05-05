@@ -1,6 +1,6 @@
 import React from "react";
 import { Row } from "react-bootstrap";
-import ScaleWhenVisible from "./ScaleWhenVisible";
+import ScaleWhenVisible from "./utility/ScaleWhenVisible";
 
 function GoogleMap() {
   return (

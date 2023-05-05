@@ -1,7 +1,7 @@
 import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
 import newsLetter from "../assets/images/newsletter.png"
-import FadeInWhenVisible from "./FadeInWhenVisible"
+import FadeInWhenVisible from  "./utility/FadeInWhenVisible"
 
 function EmailNewsletter() {
   return (

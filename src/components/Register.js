@@ -2,7 +2,7 @@ import { useContext, useEffect } from "react"
 import DispatchContext from "../DispatchContext"
 import { Container, Row, Col } from "react-bootstrap"
 import RegisterForm from "./RegisterForm"
-import FadeInWhenVisible from "./FadeInWhenVisible"
+import FadeInWhenVisible from "./utility/FadeInWhenVisible"
 
 function Register() {
   const appDispatch = useContext(DispatchContext)

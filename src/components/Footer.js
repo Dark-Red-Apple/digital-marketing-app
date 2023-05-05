@@ -2,7 +2,7 @@ import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { icon } from "@fortawesome/fontawesome-svg-core/import.macro"
 import { faBell } from "@fortawesome/free-solid-svg-icons"
-import FadeInWhenVisible from "./FadeInWhenVisible"
+import FadeInWhenVisible from  "./utility/FadeInWhenVisible"
 import { Container, Row, Col } from "react-bootstrap"
 
 function Footer() {

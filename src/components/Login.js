@@ -3,26 +3,13 @@ import DispatchContext from "../DispatchContext"
 import { Container, Row, Col } from "react-bootstrap"
 import LoginForm from "./LoginForm"
 import { Link } from "react-router-dom"
-import FadeInWhenVisible from "./FadeInWhenVisible"
+import FadeInWhenVisible from  "./utility/FadeInWhenVisible"
 
 function Login() {
   const appDispatch = useContext(DispatchContext)
   useEffect(() => {
     appDispatch({ type: "title", value: "Login" })
   }, [])
-
-  // const [email, setEmail] = useState(null)
-  // const [password, setPassword] = useState(null)
-
-  // function validation(e) {
-  //   e.preventDefault()
-  //   if (email === null || email === "") {
-  //     window.alert("please fill your Email!")
-  //   }
-  //   if (password === null || password === "") {
-  //     window.alert("please fill your Password!")
-  //   }
-  // }
 
   return (
     <section>

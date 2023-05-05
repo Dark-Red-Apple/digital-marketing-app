@@ -2,7 +2,7 @@ import { useContext, useEffect } from "react"
 import DispatchContext from "../DispatchContext"
 import { Container, Row, Col } from "react-bootstrap"
 import EmailNewsletter from "./EmailNewsletter"
-import FadeInWhenVisible from "./FadeInWhenVisible"
+import FadeInWhenVisible from "./utility/FadeInWhenVisible"
 // images = []
 import blogImage1 from "../assets/images/blog-header-image.jpg"
 import blogImage2 from "../assets/images/blog-sidebar-image.jpg"

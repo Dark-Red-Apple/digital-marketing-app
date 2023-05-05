@@ -3,7 +3,7 @@ import workingGirl from "../assets/images/working-girl.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { icon } from "@fortawesome/fontawesome-svg-core/import.macro"
 import { Container, Row, Col } from "react-bootstrap"
-import FadeInWhenVisible from "./FadeInWhenVisible"
+import FadeInWhenVisible from  "./utility/FadeInWhenVisible"
 
 function HomeSlider() {
   return (

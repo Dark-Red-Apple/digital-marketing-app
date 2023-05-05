@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import FadeInWhenVisible from "./FadeInWhenVisible";
+import FadeInWhenVisible from  "./utility/FadeInWhenVisible";
 
 function ContactUsForm() {
   return (

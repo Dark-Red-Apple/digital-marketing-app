@@ -1,7 +1,7 @@
 import { useContext, useEffect } from "react"
 import DispatchContext from "../DispatchContext"
 import { Container, Row } from "react-bootstrap"
-import FadeInWhenVisible from "./FadeInWhenVisible"
+import FadeInWhenVisible from  "./utility/FadeInWhenVisible"
 import ContactUsForm from "./ContactUsForm"
 import GoogleMap from "./GoogleMap"
 

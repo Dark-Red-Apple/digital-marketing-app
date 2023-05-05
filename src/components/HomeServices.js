@@ -7,7 +7,7 @@ import image3 from "../assets/images/project-image03.jpg"
 import image4 from "../assets/images/project-image04.jpg"
 import image5 from "../assets/images/project-image05.jpg"
 import HomeSlide from "./HomeSlide"
-import FadeInWhenVisible from "./FadeInWhenVisible"
+import FadeInWhenVisible from  "./utility/FadeInWhenVisible"
 import { Container, Row } from "react-bootstrap"
 
 function HomeServices() {

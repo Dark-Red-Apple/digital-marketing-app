@@ -1,6 +1,6 @@
 import { useRef } from "react"
 import officeImage from "../assets/images/office.png"
-import FadeInWhenVisible from "./FadeInWhenVisible"
+import FadeInWhenVisible from  "./utility/FadeInWhenVisible"
 import { Container, Row } from "react-bootstrap"
 
 function HomeAboutUs() {
