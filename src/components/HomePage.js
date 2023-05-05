@@ -1,6 +1,6 @@
 import { useContext, useEffect } from "react"
 import "../assets/styles/index.scss"
-import HomeSlider from "./HomeSlider"
+import HomeSlider from "./HomeSliderBanner"
 import HomeAboutUs from "./HomeAboutUs"
 import Testimonials from "./Testimonials"
 import HomeServices from "./HomeServices"

@@ -1,7 +1,7 @@
 // import { useRef } from "react"
 import { motion } from "framer-motion"
 
-function FadeInWhenVisible({ children, scrollRef, transitionDelay, oncePlay }) {
+function FadeInWhenVisible({ children, scrollRef, transitionDelay = 0 }) {
   return (
     <motion.div
       initial="hidden"

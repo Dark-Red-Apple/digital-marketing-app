@@ -1,7 +1,7 @@
 import React from "react"
-import { Container, Row, Col } from "react-bootstrap"
+import { Row, Col } from "react-bootstrap"
 import newsLetter from "../assets/images/newsletter.png"
-import FadeInWhenVisible from  "./utility/FadeInWhenVisible"
+import FadeInWhenVisible from "./utility/FadeInWhenVisible"
 
 function EmailNewsletter() {
   return (
@@ -22,14 +22,15 @@ function EmailNewsletter() {
         <form>
           <FadeInWhenVisible transitionDelay={0.3}>
             <div className="dma-form-group mt-4">
-              <input onChange type="email" placeholder="Please enter your email" />
+              {/* if we don't set the onChange here we get some weird warnings with motion */}
+              <input onChange={() => {}} type="email" placeholder="Please enter your email" />
               <small className="text-muted">We'll NOT share your email address to anyone else.</small>
             </div>
           </FadeInWhenVisible>
 
           <FadeInWhenVisible transitionDelay={0.4}>
             <div className="dma-form-group mt-4 d-flex">
-              <input type="checkbox" name="monthly" />
+              <input onChange={() => {}} type="checkbox" name="monthly" />
               <label htmlFor="monthly">Please send me a monthly newspaper.</label>
             </div>
           </FadeInWhenVisible>

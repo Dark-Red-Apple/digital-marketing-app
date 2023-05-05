@@ -6,18 +6,18 @@ import image2 from "../assets/images/project-image02.jpg"
 import image3 from "../assets/images/project-image03.jpg"
 import image4 from "../assets/images/project-image04.jpg"
 import image5 from "../assets/images/project-image05.jpg"
-import HomeSlide from "./HomeSlide"
-import FadeInWhenVisible from  "./utility/FadeInWhenVisible"
+import HomeSlide from "./HomeServicesSlide"
+import FadeInWhenVisible from "./utility/FadeInWhenVisible"
 import { Container, Row } from "react-bootstrap"
 
 function HomeServices() {
-  const items = [<HomeSlide source={image1} content={" lorem 1"} address={""} linkContent={"Ultimate HealthCare"} />, <HomeSlide source={image2} content={" lorem 2"} address={""} linkContent={"Ultimate HealthCare"} />, <HomeSlide source={image3} content={" lorem 3"} address={""} linkContent={"Ultimate HealthCare"} />, <HomeSlide source={image4} content={" lorem 4"} address={""} linkContent={"Ultimate HealthCare"} />, <HomeSlide source={image5} content={" lorem 5"} address={""} linkContent={"Ultimate HealthCare"} />]
+  const items = []
 
   const Gallery = () => {
     return (
       <AliceCarousel
         mouseTracking
-        items={items}
+        // items={items}
         responsive={{
           0: { items: 1 },
           1024: {
@@ -30,7 +30,23 @@ function HomeServices() {
         autoPlayInterval={4000}
         infinite={true}
         touchMoveDefaultEvents={false}
-      />
+      >
+        <HomeSlide source={image1} address={""} linkContent={"Ultimate HealthCare"}>
+          Lorem 1
+        </HomeSlide>
+        <HomeSlide source={image2} address={""} linkContent={"Ultimate HealthCare"}>
+          Lorem 2
+        </HomeSlide>
+        <HomeSlide source={image3} address={""} linkContent={"Ultimate HealthCare"}>
+          Lorem 3
+        </HomeSlide>
+        <HomeSlide source={image4} address={""} linkContent={"Ultimate HealthCare"}>
+          Lorem 4
+        </HomeSlide>
+        <HomeSlide source={image5} address={""} linkContent={"Ultimate HealthCare"}>
+          Lorem 5
+        </HomeSlide>
+      </AliceCarousel>
     )
   }
   return (

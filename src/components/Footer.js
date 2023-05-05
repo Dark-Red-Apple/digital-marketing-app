@@ -1,8 +1,10 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { icon } from "@fortawesome/fontawesome-svg-core/import.macro"
+// import { icon } from "@fortawesome/fontawesome-svg-core"
 import { faBell } from "@fortawesome/free-solid-svg-icons"
-import FadeInWhenVisible from  "./utility/FadeInWhenVisible"
+
+import FadeInWhenVisible from "./utility/FadeInWhenVisible"
 import { Container, Row, Col } from "react-bootstrap"
 
 function Footer() {
@@ -41,9 +43,9 @@ function Footer() {
 
                     <p className="mt-2">
                       <a href="mailto:hello@company.com" className="dma-btn dma-btn--yellow">
-                        <a className="dma-icon me-2 d-inline-block">
+                        <span className="dma-icon me-2 d-inline-block">
                           <FontAwesomeIcon icon={icon({ name: "envelope" })} />
-                        </a>
+                        </span>
                         <span> aziaabad@lakeheadu.ca</span>
                       </a>
                     </p>

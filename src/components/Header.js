@@ -2,7 +2,7 @@ import MobileMenu from "./MobileMenu"
 import { Container, Row, Col } from "react-bootstrap"
 import servicesTechnology from "../assets/images/services-technology.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { icon } from "@fortawesome/fontawesome-svg-core"
+import { icon } from "@fortawesome/fontawesome-svg-core/import.macro"
 import HeaderUser from "./HeaderUser"
 
 function Header() {
@@ -10,14 +10,14 @@ function Header() {
     <header className="dma-header pt-2 pt-md-0">
       <Container className="p-lg-3">
         <Row>
-          <Col xs={6} sm={5} md={4} lg={4}>
+          <Col xs={9} sm={5} md={6} lg={4}>
             <div className="dma-header__logo dma-btn dma-btn--yellow ">
               <i></i>
               <FontAwesomeIcon icon={icon({ name: "line-chart" })} style={{ marginRight: "5px" }} />
               <a href="/">Market Mission</a>
             </div>
           </Col>
-          <Col xs={6} sm={7} md={8} lg={8} className="d-flex justify-content-end align-items-center">
+          <Col xs={3} sm={7} md={6} lg={8} className="d-flex justify-content-end align-items-center">
             <div className="dma-header__menu d-none d-lg-block">
               <nav className="dma-nav-links">
                 <li className="dma-btn dma-btn--yellow">

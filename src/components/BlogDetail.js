@@ -3,7 +3,7 @@ import DispatchContext from "../DispatchContext"
 import { Container, Row, Col } from "react-bootstrap"
 import authorAvatar from "../assets/images/male-avatar.png"
 import postImg from "../assets/images/blog-header-image.jpg"
-import FadeInWhenVisible from  "./utility/FadeInWhenVisible"
+import FadeInWhenVisible from "./utility/FadeInWhenVisible"
 import ScaleWhenVisible from "./utility/ScaleWhenVisible"
 import BlogCommentForm from "./BlogCommentForm"
 
@@ -50,13 +50,13 @@ function BlogDetail() {
                 <h2>Etiam quis metus elementum, tempor risus vel, condimentum orci.</h2>
                 <p>Mauris in convallis nunc, non facilisis arcu. Nunc sapien nulla, interdum at diam non, aliquam vestibulum leo. Fusce laoreet malesuada ante, consectetur consequat ante tempor et. Quisque ac risus ligula. </p>
                 <p>Suspendisse bibendum tortor at est placerat auctor. Phasellus tortor est, bibendum eu ex eu, tincidunt efficitur nunc. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                <p>
-                  <ul className="dma-list-group-yellow py-3">
-                    <li>Quisque at condimentum est. Duis sollicitudin urna id elit pulvinar placerat. Ut ac dui in ex vulputate dictum.</li>
-                    <li>Mauris vitae tellus nisi. Morbi rutrum lacus sit amet volutpat viverra.</li>
-                    <li>Integer maximus sem ut ipsum blandit elementum. Nullam sollicitudin accumsan commodo.</li>
-                  </ul>
-                </p>
+
+                <ul className="dma-list-group-yellow py-3">
+                  <li>Quisque at condimentum est. Duis sollicitudin urna id elit pulvinar placerat. Ut ac dui in ex vulputate dictum.</li>
+                  <li>Mauris vitae tellus nisi. Morbi rutrum lacus sit amet volutpat viverra.</li>
+                  <li>Integer maximus sem ut ipsum blandit elementum. Nullam sollicitudin accumsan commodo.</li>
+                </ul>
+
                 <p>Sed leo nisl, posuere at molestie ac, suscipit auctor mauris. Etiam quis metus elementum, tempor risus vel, condimentum orci.</p>
                 <h2>Curabitur tempus vel libero lobortis feugiat</h2>
                 <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris in convallis nunc, non facilisis arcu. Nunc sapien nulla, interdum at diam non, aliquam vestibulum leo.</p>
