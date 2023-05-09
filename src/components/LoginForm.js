@@ -38,7 +38,6 @@ function LoginForm() {
       case "emailRequired": {
         console.log(action.value == "" || action.value == null)
         if (action.value == "" || action.value == null) {
-          console.log("sfsdf")
           draft.email.error = true
           draft.email.message = "Please enter your email!"
         } else {
