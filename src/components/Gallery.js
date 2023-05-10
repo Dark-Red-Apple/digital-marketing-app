@@ -1,39 +1,44 @@
-import axios from "axios";
-import { async } from "q";
-import { useEffect, useState } from "react";
+import axios from "axios"
+import { async } from "q"
+import { useEffect, useState } from "react"
+import { Col, Row, Container } from "react-bootstrap"
 
 function Gallery() {
-  const [gallery, setGallery] = useState();
+  const [images, setImages] = useState()
 
   useEffect(() => {
-    console.log("useeffect");
+    // console.log("useeffect")
 
     async function fetchData() {
       try {
-        const response = await axios.get(
-          `https://picsum.photos/v2/list?page=2&limit=10`
-        )
+        const response = await axios.get(`https://picsum.photos/v2/list?page=2&limit=10`)
 
-        const images = response.data;
-        console.log(response);
-        console.log(images);
-        setGallery({ images });
+        const data = response.data
+        // console.log(response)
+        console.log(data)
+        setImages(data)
       } catch (error) {
-        console.log(error);
+        console.log(error)
       }
     }
-    fetchData();
-  }, []);
+    fetchData()
+  }, [])
 
   return (
-    <>
-      {/* {gallery &&
-        gallery.map((item) => {
-          return <img className="m-2" src={item.url} alt={item.author}></img>;
-        })} */}
-       
-    </>
-  );
+    <section>
+      <Container>
+        <Row>
+          {images?.map((item) => {
+            return (
+              <Col lg={3} md={4} xs={12}>
+                <img className="w-100 img-fluid m-2 object-fit-cover" style={{ height: "200px" }} src={item.download_url} alt={item.author}></img>
+              </Col>
+            )
+          })}
+        </Row>
+      </Container>
+    </section>
+  )
 }
 
-export default Gallery;
+export default Gallery
