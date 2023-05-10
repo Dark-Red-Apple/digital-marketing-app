@@ -30,8 +30,8 @@ function Gallery() {
         <Row>
           {images?.map((item) => {
             return (
-              <Col lg={3} md={4} xs={12}>
-                <img className="w-100 img-fluid m-2 object-fit-cover" style={{ height: "200px" }} src={item.download_url} alt={item.author}></img>
+              <Col lg={3} md={4} xs={12} className="py-2" style={{ height: "200px" }}>
+                <img className="w-100 img-fluid object-fit-cover h-100" src={item.download_url} alt={item.author}></img>
               </Col>
             )
           })}
