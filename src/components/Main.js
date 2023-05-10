@@ -13,6 +13,7 @@ import NotFound from "./NotFound"
 import BlogDetail from "./BlogDetail"
 import Login from "./Login"
 import Register from "./Register"
+import Gallery from "./Gallery"
 
 function Main() {
   const initialState = {
@@ -48,6 +49,7 @@ function Main() {
           <Route path="/blog/:id" element={<BlogDetail />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/gallery" element={<Gallery />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
